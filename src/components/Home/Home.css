@@ -1,0 +1,64 @@
+.slide-open-btn{
+    position: fixed;
+    cursor: pointer;
+    font-size: 40px;
+    color: aliceblue;
+}
+.slide-open-btn:hover{
+    position: fixed;
+    cursor: pointer;
+    font-size: 40px;
+    color: rgb(62, 40, 163);
+    transition: 0.6s ease-in-out;
+    
+}
+.home-div{
+    overflow-x: hidden;
+}
+.home-main-heading{
+    font-size: 50px;
+    color: #1c72b8;
+    font-weight: 600;
+}
+.home-sub-heading{
+    font-size: 36px;
+    font-weight: 600;
+}
+.home-text{
+    font-size: 20px;
+    font-weight: 600;
+}
+.explore-btn{
+    border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index:1000;
+  
+    
+
+}
+.explore-btn:hover{
+    border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: 2px solid white;
+  color: rgb(76, 46, 186);
+  background-color: white;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s ease-in-out;
+
+  
+    
+
+}
