@@ -12,6 +12,20 @@
     transition: 0.6s ease-in-out;
     
 }
+.slide-open-btn-second{
+    position: fixed;
+    cursor: pointer;
+    font-size: 40px;
+    color: blue;
+}
+.slide-open-btn-second:hover{
+    position: fixed;
+    cursor: pointer;
+    font-size: 40px;
+    color: rgb(62, 40, 163);
+    transition: 0.6s ease-in-out;
+    
+}
 .home-div{
     overflow-x: hidden;
 }
@@ -61,4 +75,94 @@
   
     
 
+}
+.home-second-heading{
+    color: #212121;
+    font-size: 54px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.home-second-sub-heading{
+    color: #212121;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.home-hr{
+    background-color: #212121;
+    margin-top: 30%;
+    height: 0.1em;
+    width: auto;
+}
+.home-btn{
+    padding: 7px 12px;
+    margin: 5px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: .8rem;
+    color: #1c72b8;
+    border: 1px solid #1c72b8;
+    padding-top: 10px;
+}
+.home-second-btn{
+    padding: 7px 12px;
+    display: inline-block;
+    margin: 5px;
+    background: #1c72b8;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: .8rem;
+    color: #fff;
+    border: 1px solid #1c72b8;
+    padding-top: 10px;
+   
+    
+    
+    cursor: pointer;
+    
+}
+.home-card{
+   
+    padding: 12px 15px 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+    background: #fff;
+    border-radius: 8px;
+}
+.home-card-heading{
+   
+    color: #1c72b8!important;
+    font-size: 20px!important;
+    font-weight: 700;
+}
+.home-card-sub-heading{
+   
+    color: #1c72b8!important;
+    font-size: 13 px!important;
+}
+.home-card-text{
+   
+   font-size: 14px!important;
+    line-height: 20px!important;
+    color:#212121!important
+}
+.home-card-btn{
+   
+   text-align: center;
+    font-weight: 600;
+    
+    color: #1c72b8;
+    border: 1px solid #1c72b8;
+    border-radius: 40px;
+    cursor: pointer;
+    background: #fff;
+    transition: all .3s;
+    text-transform: uppercase;
+    width:min-content
+}
+.home-card-icons{
+    width: 60px;
+    position: absolute;
+    margin-left: 150px;
+   
 }
