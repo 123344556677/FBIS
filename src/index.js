@@ -1,20 +1,4 @@
-/*!
 
-=========================================================
-* BLK Design System React - v1.2.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
@@ -30,6 +14,8 @@ import ProfilePage from "views/examples/ProfilePage.js";
 import ParticlesBackground from "components/particles/ParticlesBackground";
 import Home from "components/Home/Home";
 import CanvasAnimation from "components/particles/CanvasAnimation";
+import About from "components/About/About";
+import Innovation from "components/Innovation/Innovation";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -40,13 +26,14 @@ root.render(
   
     <Routes>
      
-      <Route path="/components" element={<Index />} />
-      <Route path="/home" element={<Home />} />
+      
+      <Route path="/" element={<Home />} />
+       <Route path="/about" element={<About />} />
 
-      <Route path="/landing-page" element={<LandingPage />} />
+      <Route path="/innovation" element={<Innovation />} />
       <Route path="/register-page" element={<RegisterPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
-      <Route path="*" element={<Navigate to="/components" replace />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   </BrowserRouter>
 

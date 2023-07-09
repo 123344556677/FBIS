@@ -1,0 +1,13 @@
+.profile-button{
+    color: #1c72b8;
+    border: 1px solid #1c72b8;
+    border-radius: 40px;
+    background: #fff;
+    transition: all .3s;
+}
+.linkedin-icon{
+    color: #1c72b8;
+    font-size: 15px;
+    cursor: pointer;
+
+}

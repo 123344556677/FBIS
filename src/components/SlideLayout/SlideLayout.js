@@ -4,6 +4,7 @@ import { Container } from 'reactstrap'
 import {AiOutlineClose} from 'react-icons/ai'
 import Aos from 'aos'
 import { motion } from "framer-motion";
+import { useNavigate } from 'react-router-dom'
 
 const SlideLayout = ({value,stateValue}) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -37,6 +38,7 @@ const SlideLayout = ({value,stateValue}) => {
     hidden: { y: "-100%" },
     visible: { y: 0, transition: { duration: 1.1 } },
   };
+  const history=useNavigate()
   return (
  <Container fluid className={`slide-layout ${isOpen ? 'open' : ''}`}>
       <AiOutlineClose className='slide-btn' onClick={toggleLayout}/>
@@ -45,12 +47,12 @@ const SlideLayout = ({value,stateValue}) => {
       
         <div className="item" >
           <span className="number mb-3">01</span>
-          <span className="text ">Home</span>
+          <span className="text " onClick={()=>history('/')}>Home</span>
         </div>
         
         <div className="item">
           <span className="number ml-lg-4 mb-3">02</span>
-          <span className="text ml-lg-4">About Us</span>
+          <span className="text ml-lg-4" onClick={()=>history('/about')}>About Us</span>
         </div>
         <div className="item">
           <span className="number ml-lg-4 mb-3">03</span>
@@ -58,11 +60,11 @@ const SlideLayout = ({value,stateValue}) => {
         </div>
         <div className="item">
           <span className="number ml-lg-4 mb-3">04</span>
-          <span className="text ml-lg-4">Investors</span>
+          <span className="text ml-lg-4" >Investors</span>
         </div>
         <div className="item">
           <span className="number ml-lg-4 mb-3">05</span>
-          <span className="text ml-lg-4">Innovation</span>
+          <span className="text ml-lg-4" onClick={()=>history('/innovation')}>Innovation</span>
         </div>
         <div className="item">
           <span className="number ml-lg-4 mb-3">06</span>

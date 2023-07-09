@@ -17,6 +17,7 @@
     cursor: pointer;
     font-size: 40px;
     color: blue;
+    margin-top: 10%;
 }
 .slide-open-btn-second:hover{
     position: fixed;
@@ -165,4 +166,9 @@
     position: absolute;
     margin-left: 150px;
    
+}
+.main-div{
+    background-color: white;
+    height: 100vh;
+
 }
