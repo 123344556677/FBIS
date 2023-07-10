@@ -4,6 +4,7 @@
 }
 .logo-row{
     margin-top: 3%;
+    position: relative;
 }
 .breadcrums-text{
     font-size: 14px;
@@ -60,6 +61,9 @@ background-image: url("https://netsoltech.com/images/aboutMainBoxBg.svg");
 background-image: linear-gradient(to bottom right,#0f1012,#181b90);
 max-width: 100%!important;
 height: auto;
+position: relative;
+
+
 
 }
 .about-circles{

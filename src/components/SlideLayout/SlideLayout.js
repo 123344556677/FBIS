@@ -68,7 +68,7 @@ const SlideLayout = ({value,stateValue}) => {
         </div>
         <div className="item">
           <span className="number ml-lg-4 mb-3">06</span>
-          <span className="text ml-lg-4">Events</span>
+          <span className="text ml-lg-4" onClick={()=>history('/events')}>Events</span>
         </div>
       </div>
        </motion.div>

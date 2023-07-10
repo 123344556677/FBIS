@@ -16,6 +16,7 @@ import Home from "components/Home/Home";
 import CanvasAnimation from "components/particles/CanvasAnimation";
 import About from "components/About/About";
 import Innovation from "components/Innovation/Innovation";
+import Events from "components/Events/Events";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -28,7 +29,9 @@ root.render(
      
       
       <Route path="/" element={<Home />} />
-       <Route path="/about" element={<About />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/events" element={<Events />} /> 
+
 
       <Route path="/innovation" element={<Innovation />} />
       <Route path="/register-page" element={<RegisterPage />} />

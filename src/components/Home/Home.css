@@ -44,7 +44,7 @@
     font-weight: 600;
 }
 .explore-btn{
-    border-radius: 50%;
+  border-radius: 50%;
   width: 70px;
   height: 70px;
   border: 2px solid white;
@@ -170,5 +170,6 @@
 .main-div{
     background-color: white;
     height: 100vh;
+    z-index: 2000 !important;
 
 }

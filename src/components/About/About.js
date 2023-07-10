@@ -2,6 +2,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Aos from "aos";
+import 'aos/dist/aos.css';
 import {
   Button,
   Card,
@@ -91,6 +92,7 @@ const About = () => {
     hidden: { x: "100%" },
     visible: { x: 0, transition: { duration: 0.8 } },
   };
+  Aos.init()
   return (
     <>
     {
@@ -121,7 +123,7 @@ const About = () => {
           onClick={toggleLayout}
           className="ml-lg-5 slide-open-btn-second "
         />
-        <Container className="" style={{ marginTop: "10%" }}>
+        <Container className="" style={{ marginTop: "10%",position:"relative" }}>
           <h1 className="text-color  page-headings">About Us</h1>
           <p className="text-color page-text">
             Proudly serving the world’s top asset finance and leasing companies
