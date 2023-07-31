@@ -17,27 +17,31 @@ import CanvasAnimation from "components/particles/CanvasAnimation";
 import About from "components/About/About";
 import Innovation from "components/Innovation/Innovation";
 import Events from "components/Events/Events";
+import Contact from "components/Contact/Contact";
+import Services from "components/Services/Services";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <>
-  <CanvasAnimation />
-  <BrowserRouter>
   
+  <BrowserRouter>
+ 
+ 
     <Routes>
      
       
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/events" element={<Events />} /> 
+      <Route path="/contact" element={<Contact />} /> 
 
 
-      <Route path="/innovation" element={<Innovation />} />
+      <Route path="/services" element={<Services />} />
       <Route path="/register-page" element={<RegisterPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
+    
   </BrowserRouter>
 
   </>

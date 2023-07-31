@@ -132,4 +132,22 @@ position: relative;
 
 }
 
+@media (min-width: 1200px) {
+  .about-circle-one{
+    margin-left: 10%;
+
+  }
+  .about-circle-two{
+    margin-left: 18%;
+
+  }
+  .about-logo{
+    width: 20%;
+    margin-left: 90%;
+
+    
+}
+}
+
+
 

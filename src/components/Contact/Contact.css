@@ -1,0 +1,19 @@
+.contact-form-heading{
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+
+}
+.form-inputs{
+    border: none;
+    background: #fcfcfc; 
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
+    padding: 1.5rem;
+
+}
+.form-inputs-area{
+    border: none;
+    background: #fcfcfc; 
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
+    padding: 1.5rem!important;
+
+}

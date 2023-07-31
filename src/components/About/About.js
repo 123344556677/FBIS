@@ -1,5 +1,5 @@
 import IndexNavbar from "components/Navbars/IndexNavbar";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Aos from "aos";
 import 'aos/dist/aos.css';
@@ -92,7 +92,12 @@ const About = () => {
     hidden: { x: "100%" },
     visible: { x: 0, transition: { duration: 0.8 } },
   };
-  Aos.init()
+ useEffect(() => {
+    Aos.init({
+      duration: 1000, // Set the duration of animations
+      once: true,     // Only animate elements once on scroll
+    });
+  }, []);
   return (
     <>
     {
@@ -103,7 +108,7 @@ const About = () => {
         <br />
 
         <Row className="logo-row  ">
-          <Col xl={2} className="text-right no gutters">
+          <Col xl={2} className="no gutters">
             <img
               className="about-logo"
               alt=""
@@ -146,7 +151,7 @@ const About = () => {
 
         <Row className="justify-content-center mt-5">
           <Col xl={10}>
-            <Card className="about-big-card">
+            <Card className="about-big-card" data-aos="fade-up">
               <div className="about-big-card-layer ml-1">
                 <h1
                   className="text-center text-white mb-0 about-big-card-heading"
@@ -167,10 +172,10 @@ const About = () => {
           </Col>
         </Row>
        
-        <Container className=" ml-0 mr-0 about-mission-container mt-5">
+        <Container className=" ml-0 mr-0 about-mission-container mt-5" >
           <br />
           <Row className="mt-5 mr-0">
-            <Col xl={7}>
+            <Col xl={7}  data-aos="fade-up">
               <h2 className="home-sub-heading text-white mt-4">
                 Over Four Decades of Global Experience
               </h2>
@@ -194,7 +199,7 @@ const About = () => {
                     </p>
                   </div>
                 </Col>
-                <Col xl={2} style={{ marginLeft: "10%" }}>
+                <Col xl={2} className="about-circle-one">
                   <div className="about-circles ml-lg-4">
                     <h2 className="home-sub-heading mb-0 text-white text-center">
                       20+
@@ -204,7 +209,7 @@ const About = () => {
                     </p>
                   </div>
                 </Col>
-                <Col xl={1} className="" style={{ marginLeft: "18%" }}>
+                <Col xl={1}  className="about-circle-two">
                   <div className="about-circles">
                     <h2 className="home-sub-heading mb-0 text-white text-center">
                       25+
@@ -227,7 +232,7 @@ const About = () => {
           <Row className="mt-5">
             {edgeCards.map((data, index) => (
               <Col xl={6}>
-                <Card className="edge-cards">
+                <Card className="edge-cards" >
                   <CardHeader>
                     <h2 className="edge-card-heading text-color mb-0">
                       {" "}

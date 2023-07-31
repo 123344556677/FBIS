@@ -21,7 +21,7 @@ const ProfileModals = (props) => {
   
   console.log(props, "modaValue===========>");
   const Values = {
-    userId: userId.id,
+    userId: userId?.id,
   };
  
 
