@@ -1,0 +1,9 @@
+.client-img{
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+}
+.client-name{
+    font-size: 15px;
+    color: #2D1B57!important;
+    text-transform: uppercase!important;
+    padding-top: 4.5rem!important;
+}

@@ -19,11 +19,14 @@ import { CiMenuFries } from "react-icons/ci";
 import ProfileModals from "components/Modals/ProfileModals";
 import Footer from "components/Footer/Footer";
 import { useNavigate } from "react-router-dom";
+import CanvasAnimation from "components/particles/CanvasAnimation";
+import serviceOne from '../../assets/img/dummyOne.jpg'
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [homeCheck, setHomeCheck] = useState(false);
   const [moreCheck, setMoreCheck] = useState(true);
+ 
   const toggleLayout = () => {
     setIsOpen(!isOpen);
     setIsOpen(!isOpen);
@@ -87,9 +90,53 @@ const About = () => {
         "Founder & Chief Executive Officer, NETSOL Technologies Ltd. Pakistan",
     },
   ];
+  const serviceCards = [
+    {
+      class:"services-cards-color-one",
+      pic:"https://drudotstech.com/img/service/service1.svg",
+      heading: "IOS App Development",
+      content:
+        "Mobile application development services enable you to realise your mobile app ideas into feature-rich user experiences.",
+    },
+    {
+      class:"services-cards-color-Two",
+      pic:"https://drudotstech.com/img/service/service2.svg",
+      heading: "Andriod App Development",
+      content:
+        "We channel your ideas into custom android apps that are feature-rich with user-centric.",
+    },
+    {
+      class:"services-cards-color-Three",
+      pic:"	https://drudotstech.com/img/service/service3.svg",
+      heading: "Web Developement",
+      content:
+        "We build web applications that deliver remarkable functionality and user interface",
+    },
+    {
+      class:"services-cards-color-Four",
+      pic:"https://drudotstech.com/img/service/service5.svg",
+      heading: "Mobile App Uploading",
+      content:
+        "Fast, Powerful & Most Secure Network Solutions for Smart startups & Businesses.",
+    },
+    {
+      class:"services-cards-color-Five",
+      pic:"https://drudotstech.com/img/service4.svg",
+      heading: "Application Bug Fixes",
+      content:
+        "From priority bug-fixing, technical investigations and change requests, we’ll support and maintain your software.",
+    },
+     {
+      class:"services-cards-color-Six",
+      pic:"	https://drudotstech.com/img/service/service6.svg",
+      heading: "UI/UX",
+      content:
+        "If you need a quick, efficient and secure data migration service with no disruption to your business, our experts can help.",
+    },
+  ];
   const history=useNavigate()
-  const slideVariants = {
-    hidden: { x: "100%" },
+  const slideVariantsOne = {
+    hidden: { x: "-100%" },
     visible: { x: 0, transition: { duration: 0.8 } },
   };
  useEffect(() => {
@@ -104,214 +151,306 @@ const About = () => {
       // <IndexNavbar />
     }
 
-      <div className="main-div home-div ">
-        <br />
-
-        <Row className="logo-row  ">
-          <Col xl={2} className="no gutters">
-            <img
-              className="about-logo"
-              alt=""
-              src="https://netsoltech.com/images/netsol-logo.svg"
-            />
-          </Col>
-          <Col xl={10} className="mt-3">
-            <p className="breadcrums-text text-color">
-              Your are now viewing
-              <a className="breadcrums-link ml-2" onClick={()=>history('/home')}>HOME</a>
-              <span>/</span>
-              <a className="breadcrums-link" onClick={()=>history('/about')}>About Us</a>
-            </p>
-          </Col>
-        </Row>
-        <CiMenuFries
-          onClick={toggleLayout}
-          className="ml-lg-5 slide-open-btn-second "
-        />
-        <Container className="" style={{ marginTop: "10%",position:"relative" }}>
-          <h1 className="text-color  page-headings">About Us</h1>
-          <p className="text-color page-text">
-            Proudly serving the world’s top asset finance and leasing companies
-            with smart software
-            <br />
-            technology for over four decades.
-          </p>
-          <Row className="mt-3">
-            <Col xl={2} className="">
-              <Button className="home-btn">DOWNLOAD PROFILE</Button>
-            </Col>
-            <Col xl={2}>
-              <Button className="home-second-btn">GET IN TOUCH </Button>
-            </Col>
-          </Row>
+      
+       
+         {homeCheck === false && (
+        <div className="home-div" style={{ marginTop: "15%" }}>
+         <CanvasAnimation />
           <Row>
-            <div className="about-card"></div>
-          </Row>
-        </Container>
-
-        <Row className="justify-content-center mt-5">
-          <Col xl={10}>
-            <Card className="about-big-card" data-aos="fade-up">
-              <div className="about-big-card-layer ml-1">
-                <h1
-                  className="text-center text-white mb-0 about-big-card-heading"
-                  style={{ marginTop: "20%" }}
-                >
-                  We are an
-                  <span className="home-main-heading"> Adaptive </span>{" "}
-                </h1>
-                <h1 className="text-center text-white about-big-card-heading">
-                  Enterprise
-                </h1>
-                <p className=" text-white text-center">
-                  From when we started to where we are now, HYBSOL has <br />{" "}
-                  been progressing as an enterprise that leads change.{" "}
-                </p>
-              </div>
-            </Card>
-          </Col>
-        </Row>
-       
-        <Container className=" ml-0 mr-0 about-mission-container mt-5" >
-          <br />
-          <Row className="mt-5 mr-0">
-            <Col xl={7}  data-aos="fade-up">
-              <h2 className="home-sub-heading text-white mt-4">
-                Over Four Decades of Global Experience
-              </h2>
-              <p className=" text-white ">
-                With over forty years of experience in providing
-                state-of-the-art solutions, cost-effective capabilities and
-                consulting services to the global finance and leasing industry,
-                we cater to companies with ever growing and diverse business
-                requirements across the world
+            <Col xl={2}>
+              <CiMenuFries
+                onClick={toggleLayout}
+                className="ml-lg-5 slide-open-btn "
+              />
+            </Col>
+            <Col xl={8}>
+              <h1 className="mb-2 home-main-heading ">About Us</h1>
+              
+              <p className="home-text text-white">
+               Hybsoltech is a workplace where we have 
+               gathered the top-notch experts and developers of IOS,Andriod and Web. 
+               We have a 15 member team of tested and proven developers who are experts in these fields.
+                
               </p>
-            </Col>
-            <Col xl={5} className="justify-content-center" >
-              <Row>
-                <Col xl={2}>
-                  <div className="about-circles">
-                    <h2 className="home-sub-heading mb-0 text-white text-center">
-                      40+
-                    </h2>
-                    <p className="text-center" style={{ color: "#609ccd" }}>
-                      Years in the <br /> Americas
-                    </p>
-                  </div>
-                </Col>
-                <Col xl={2} className="about-circle-one">
-                  <div className="about-circles ml-lg-4">
-                    <h2 className="home-sub-heading mb-0 text-white text-center">
-                      20+
-                    </h2>
-                    <p className="text-center" style={{ color: "#609ccd" }}>
-                      Years in the <br /> Europe
-                    </p>
-                  </div>
-                </Col>
-                <Col xl={1}  className="about-circle-two">
-                  <div className="about-circles">
-                    <h2 className="home-sub-heading mb-0 text-white text-center">
-                      25+
-                    </h2>
-                    <p className="text-center" style={{ color: "#609ccd" }}>
-                      Years in the <br /> Pacific
-                    </p>
-                  </div>
-                </Col>
-              </Row>
+              
             </Col>
           </Row>
-          <br />
-          <br />
-        </Container>
-       
-        <Container className="mt-5">
-          <h1 className="text-center text-color mt-5 edge-text">Our Edge</h1>
-
-          <Row className="mt-5">
-            {edgeCards.map((data, index) => (
-              <Col xl={6}>
-                <Card className="edge-cards" >
-                  <CardHeader>
-                    <h2 className="edge-card-heading text-color mb-0">
-                      {" "}
-                      {data?.heading}{" "}
-                    </h2>
-                  </CardHeader>
-                  <CardBody>
-                    <p className="edge-card-text"> {data?.content} </p>
-                  </CardBody>
-                </Card>
-              </Col>
-            ))}
+          <Row className="justify-content-center " style={{ marginTop: "12%" }}>
+            <a
+              className="explore-btn"
+              alt=""
+              onClick={() => setHomeCheck(true)}
+            >
+              Explore
+            </a>
           </Row>
+        </div>
+      )}
+      {homeCheck === true && (
+        <div className="home-div main-div">
+          
+           
+              <CiMenuFries
+                onClick={toggleLayout}
+                className="ml-lg-5 slide-open-btn-second "
+              />
+            
+            
 
-          <h1 className="text-center text-color mt-5 edge-text">
-            Management Team
-          </h1>
 
-          <Row className="mt-5" >
-            {teamCards.map((data, index) =>
-              moreCheck ? (
-                index < 3 && (
-                  <Col xl={4}>
-                    <Card className="edge-cards">
+<Row className="justify-content-center mt-5" style={{ marginTop: "10%" }}>>
+<Col xl={12}>
+<h1 className="web-heading text-center"> Meet Our Team</h1>
+
+
+<Container>
+<Row className="mt-5">
+ {serviceCards.map((data, index) => (
+<Col xl={4} className="text-center">
+<motion.div
+                initial="hidden"
+                animate="visible"
+                variants={slideVariantsOne}
+              >
+                    <Card className="edge-cards " >
                       <CardHeader>
-                        <h2 className="edge-card-heading text-color mb-0 text-center">
-                          {" "}
-                          {data?.heading}{" "}
-                        </h2>
+                        
+                          <img src={serviceOne}alt="" className=""/>
+                        
+                        <h5 className="text-color  services-card-heading  mb-0">Abdul Hannan</h5>
+                        <span className="team-designation">Web Developer</span>
                       </CardHeader>
                       <CardBody>
-                        <p className="edge-card-text text-center">
-                          {" "}
-                          {data?.content}{" "}
+                        <p className="text-color services-card-text">
+                          I believe novel problems are nothing but the prospect of learning something peculiar. I work with a high-caliber 
+                          team to beget prodigious value to substantial projects.
                         </p>
                       </CardBody>
                       <CardFooter>
-                        <ProfileModals />
                       </CardFooter>
+                      
                     </Card>
+                    </motion.div>
                   </Col>
-                )
-              ) : (
-                <Col xl={4}>
-                  <Card className="edge-cards">
-                    <CardHeader>
-                      <h2 className="edge-card-heading text-color mb-0 text-center">
-                        {" "}
-                        {data?.heading}{" "}
-                      </h2>
-                    </CardHeader>
-                    <CardBody>
-                      <p className="edge-card-text text-center">
-                        {" "}
-                        {data?.content}{" "}
-                      </p>
-                    </CardBody>
-                    <CardFooter>
-                      <ProfileModals />
-                    </CardFooter>
-                  </Card>
-                </Col>
-              )
-            )}
-          </Row>
-          {moreCheck && (
-            <Row className="justify-content-center">
-              <a
-                className="explore-about-btn"
-                alt=""
-                onClick={() => setMoreCheck(false)}
-              >
-                +
-              </a>
-            </Row>
-          )}
-        </Container>
-        <Footer />
-      </div>
+ ))}
+
+
+</Row>
+</Container>
+</Col>
+</Row>
+
+<Footer />
+        </div>
+      )}
+
+
+
+
+        {
+
+        // <Row className="logo-row  ">
+        //   <Col xl={2} className="no gutters">
+        //     <img
+        //       className="about-logo"
+        //       alt=""
+        //       src="https://netsoltech.com/images/netsol-logo.svg"
+        //     />
+        //   </Col>
+        //   <Col xl={10} className="mt-3">
+        //     <p className="breadcrums-text text-color">
+        //       Your are now viewing
+        //       <a className="breadcrums-link ml-2" onClick={()=>history('/home')}>HOME</a>
+        //       <span>/</span>
+        //       <a className="breadcrums-link" onClick={()=>history('/about')}>About Us</a>
+        //     </p>
+        //   </Col>
+        // </Row>
+       
+        // <Container className="" style={{ marginTop: "10%",position:"relative" }}>
+        //   <h1 className="text-color  page-headings">About Us</h1>
+        //   <p className="text-color page-text">
+        //     Proudly serving the world’s top asset finance and leasing companies
+        //     with smart software
+        //     <br />
+        //     technology for over four decades.
+        //   </p>
+        //   <Row className="mt-3">
+        //     <Col xl={2} className="">
+        //       <Button className="home-btn">DOWNLOAD PROFILE</Button>
+        //     </Col>
+        //     <Col xl={2}>
+        //       <Button className="home-second-btn">GET IN TOUCH </Button>
+        //     </Col>
+        //   </Row>
+        //   <Row>
+        //     <div className="about-card"></div>
+        //   </Row>
+        // </Container>
+
+        // <Row className="justify-content-center mt-5">
+        //   <Col xl={10}>
+        //     <Card className="about-big-card" data-aos="fade-up">
+        //       <div className="about-big-card-layer ml-1">
+        //         <h1
+        //           className="text-center text-white mb-0 about-big-card-heading"
+        //           style={{ marginTop: "20%" }}
+        //         >
+        //           We are an
+        //           <span className="home-main-heading"> Adaptive </span>{" "}
+        //         </h1>
+        //         <h1 className="text-center text-white about-big-card-heading">
+        //           Enterprise
+        //         </h1>
+        //         <p className=" text-white text-center">
+        //           From when we started to where we are now, HYBSOL has <br />{" "}
+        //           been progressing as an enterprise that leads change.{" "}
+        //         </p>
+        //       </div>
+        //     </Card>
+        //   </Col>
+        // </Row>
+       
+        // <Container className=" ml-0 mr-0 about-mission-container mt-5" >
+        //   <br />
+        //   <Row className="mt-5 mr-0">
+        //     <Col xl={7}  data-aos="fade-up">
+        //       <h2 className="home-sub-heading text-white mt-4">
+        //         Over Four Decades of Global Experience
+        //       </h2>
+        //       <p className=" text-white ">
+        //         With over forty years of experience in providing
+        //         state-of-the-art solutions, cost-effective capabilities and
+        //         consulting services to the global finance and leasing industry,
+        //         we cater to companies with ever growing and diverse business
+        //         requirements across the world
+        //       </p>
+        //     </Col>
+        //     <Col xl={5} className="justify-content-center" >
+        //       <Row>
+        //         <Col xl={2}>
+        //           <div className="about-circles">
+        //             <h2 className="home-sub-heading mb-0 text-white text-center">
+        //               40+
+        //             </h2>
+        //             <p className="text-center" style={{ color: "#609ccd" }}>
+        //               Years in the <br /> Americas
+        //             </p>
+        //           </div>
+        //         </Col>
+        //         <Col xl={2} className="about-circle-one">
+        //           <div className="about-circles ml-lg-4">
+        //             <h2 className="home-sub-heading mb-0 text-white text-center">
+        //               20+
+        //             </h2>
+        //             <p className="text-center" style={{ color: "#609ccd" }}>
+        //               Years in the <br /> Europe
+        //             </p>
+        //           </div>
+        //         </Col>
+        //         <Col xl={1}  className="about-circle-two">
+        //           <div className="about-circles">
+        //             <h2 className="home-sub-heading mb-0 text-white text-center">
+        //               25+
+        //             </h2>
+        //             <p className="text-center" style={{ color: "#609ccd" }}>
+        //               Years in the <br /> Pacific
+        //             </p>
+        //           </div>
+        //         </Col>
+        //       </Row>
+        //     </Col>
+        //   </Row>
+        //   <br />
+        //   <br />
+        // </Container>
+       
+        // <Container className="mt-5">
+        //   <h1 className="text-center text-color mt-5 edge-text">Our Edge</h1>
+
+        //   <Row className="mt-5">
+        //     {edgeCards.map((data, index) => (
+        //       <Col xl={6}>
+        //         <Card className="edge-cards" >
+        //           <CardHeader>
+        //             <h2 className="edge-card-heading text-color mb-0">
+        //               {" "}
+        //               {data?.heading}{" "}
+        //             </h2>
+        //           </CardHeader>
+        //           <CardBody>
+        //             <p className="edge-card-text"> {data?.content} </p>
+        //           </CardBody>
+        //         </Card>
+        //       </Col>
+        //     ))}
+        //   </Row>
+
+        //   <h1 className="text-center text-color mt-5 edge-text">
+        //     Management Team
+        //   </h1>
+
+        //   <Row className="mt-5" >
+        //     {teamCards.map((data, index) =>
+        //       moreCheck ? (
+        //         index < 3 && (
+        //           <Col xl={4}>
+        //             <Card className="edge-cards">
+        //               <CardHeader>
+        //                 <h2 className="edge-card-heading text-color mb-0 text-center">
+        //                   {" "}
+        //                   {data?.heading}{" "}
+        //                 </h2>
+        //               </CardHeader>
+        //               <CardBody>
+        //                 <p className="edge-card-text text-center">
+        //                   {" "}
+        //                   {data?.content}{" "}
+        //                 </p>
+        //               </CardBody>
+        //               <CardFooter>
+        //                 <ProfileModals />
+        //               </CardFooter>
+        //             </Card>
+        //           </Col>
+        //         )
+        //       ) : (
+        //         <Col xl={4}>
+        //           <Card className="edge-cards">
+        //             <CardHeader>
+        //               <h2 className="edge-card-heading text-color mb-0 text-center">
+        //                 {" "}
+        //                 {data?.heading}{" "}
+        //               </h2>
+        //             </CardHeader>
+        //             <CardBody>
+        //               <p className="edge-card-text text-center">
+        //                 {" "}
+        //                 {data?.content}{" "}
+        //               </p>
+        //             </CardBody>
+        //             <CardFooter>
+        //               <ProfileModals />
+        //             </CardFooter>
+        //           </Card>
+        //         </Col>
+        //       )
+        //     )}
+        //   </Row>
+        //   {moreCheck && (
+        //     <Row className="justify-content-center">
+        //       <a
+        //         className="explore-about-btn"
+        //         alt=""
+        //         onClick={() => setMoreCheck(false)}
+        //       >
+        //         +
+        //       </a>
+        //     </Row>
+        //   )}
+        // </Container>
+          }
+        
       <SlideLayout value={isOpen} stateValue={handleState} />
     </>
   );

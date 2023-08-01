@@ -8,6 +8,7 @@
     background: #fcfcfc; 
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
     padding: 1.5rem;
+    color: black!important;
 
 }
 .form-inputs-area{
@@ -15,5 +16,6 @@
     background: #fcfcfc; 
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
     padding: 1.5rem!important;
+    color: black!important;
 
 }

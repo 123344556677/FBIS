@@ -19,6 +19,8 @@ import Innovation from "components/Innovation/Innovation";
 import Events from "components/Events/Events";
 import Contact from "components/Contact/Contact";
 import Services from "components/Services/Services";
+import Testimonials from "components/Testimonials/Testimonials";
+import Projects from "components/Portfolio/Portfolio";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -34,8 +36,8 @@ root.render(
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} /> 
-
-
+      <Route path="/testimonials" element={<Testimonials />} /> 
+      <Route path="/projects" element={<Projects />} />
       <Route path="/services" element={<Services />} />
       <Route path="/register-page" element={<RegisterPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />

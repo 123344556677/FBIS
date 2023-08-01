@@ -56,7 +56,7 @@ const SlideLayout = ({value,stateValue}) => {
         </div>
         <div className="item">
           <span className="number ml-lg-4 mb-3">03</span>
-          <span className="text ml-lg-4">Products</span>
+          <span className="text ml-lg-4" onClick={()=>history('/projects')}>Projects</span>
         </div>
         <div className="item">
           <span className="number ml-lg-4 mb-3">04</span>
@@ -64,7 +64,7 @@ const SlideLayout = ({value,stateValue}) => {
         </div>
         <div className="item">
           <span className="number ml-lg-4 mb-3">05</span>
-          <span className="text ml-lg-4" onClick={()=>history('/innovation')}>Innovation</span>
+          <span className="text ml-lg-4" onClick={()=>history('/testimonials')}>Testimonials</span>
         </div>
         <div className="item">
           <span className="number ml-lg-4 mb-3">06</span>

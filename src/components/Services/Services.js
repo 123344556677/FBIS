@@ -132,7 +132,8 @@ const Services = () => {
 <Row className="justify-content-center mt-5" style={{ marginTop: "10%" }}>>
 <Col xl={12}>
 <h1 className="web-heading text-center"> SERVICES</h1>
-<p className="text-center web-sub-heading">The company is working with an aim to create the most trusted name in IOS development, both locally and <br/> internationally and we are not far away from that landmark as Drudots Technology is recognized internationally <br/> by a list of companies.</p>
+<p className="text-center web-sub-heading">The company is working with an aim to create the most trusted name in IOS development, both locally and <br/> internationally and we are not far away from that landmark as Drudots Technology is recognized internationally 
+<br/> by a list of companies.</p>
 
 <Container>
 <Row className="mt-5">

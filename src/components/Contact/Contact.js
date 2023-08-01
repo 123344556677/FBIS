@@ -150,9 +150,9 @@ const Contact = () => {
                 className="ml-lg-5 slide-open-btn-second "
               />
          
-          <Container>
+          <Container className="">
             <Row
-              style={{ marginTop: "10%" }}
+              style={{ marginTop: "15%",marginBottom:"10%" }}
               className="justify-content-center"
             >
            

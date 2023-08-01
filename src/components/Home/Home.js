@@ -14,6 +14,7 @@ import CanvasAnimation from "components/particles/CanvasAnimation";
 import homeOne from './workflow.png'
 import ProfileModals from "components/Modals/ProfileModals";
 import Footer from "components/Footer/Footer";
+import Carousels from "components/Carousel/Carousel";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -387,6 +388,7 @@ const Home = () => {
 <p className="text-center web-sub-heading">We provide best quality services.</p>
 
 <Container>
+
 <Row className="mt-5">
  {serviceCards.map((data, index) => (
 <Col xl={4}>
@@ -408,6 +410,22 @@ const Home = () => {
                     </Card>
                   </Col>
  ))}
+
+
+</Row>
+</Container>
+</Col>
+</Row>
+<hr style={{ width: "auto" }} />
+<Row className="justify-content-center mt-5">
+<Col xl={12}>
+<h1 className="web-heading text-center">OUR Projects</h1>
+<p className="text-center web-sub-heading">We provide best tested Projects.</p>
+
+<Container>
+<Row className="mt-5">
+
+<Carousels/>
 
 
 </Row>
