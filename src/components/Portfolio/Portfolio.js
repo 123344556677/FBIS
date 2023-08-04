@@ -66,6 +66,10 @@ const Projects = () => {
 
     
   ];
+  const handleScroll = (event) => {
+    
+    setHomeCheck(true)
+  };
 
   return (
     <>
@@ -74,7 +78,7 @@ const Projects = () => {
       }
 
       {homeCheck === false && (
-        <div className="home-div" style={{ marginTop: "15%" }}>
+        <div className="home-div" onWheel={handleScroll} style={{ marginTop: "15%" }}>
           <CanvasAnimation />
           <Row>
             <Col xl={2}>
@@ -90,9 +94,7 @@ const Projects = () => {
                 Our great projects embody innovation, pushing the boundaries of
                 whats possible. Each project is a testament to our dedication,
                 excellence, and unwavering commitment. From concept to
-                completion, our great projects redefine industry standards. With
-                meticulous planning and precision execution, our projects stand
-                as beacons of success.
+                completion, our great projects redefine industry standards.
               </p>
             </Col>
           </Row>
@@ -121,7 +123,7 @@ const Projects = () => {
             
             <Col xl={12}>
               <h1 className="web-heading text-center">Our Projects</h1>
-              <p className="text-center web-sub-heading">The company is working with an aim to create the most trusted name in IOS development, both locally and <br/> internationally and we are not far away from that landmark as Drudots Technology is recognized internationally 
+              <p className="text-center web-sub-heading">The company is working with an aim to create the most trusted name in IOS development, both locally and <br/> internationally and we are not far away from that landmark as Hybsol Technology is recognized internationally 
 <br/> by a list of companies.</p>
               <Container>
                 <Row className="mt-5 justify-content-center">

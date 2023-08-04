@@ -42,22 +42,27 @@ const Testimonials = () => {
       client:"MICHAEL DENNIGTON",
       designation:"CEO at GOLFWOD - AFFILIATES - CADDY - YO4",
       content:
-        "“Working with Drudots Technologies and the Drudots team has been excellent since the very beginning. I started with a rough XD design of an app I wanted to create and we have now not only designed, developed and delivered that app in both app stores, it far exceeded expectations in quality and user experience. So much so, we are currently developing 3 more apps to continue our working relationship. Nothing is too much to ask, the Team is always on hand to help and we hugely value not only our working relationship with Drudots, but also our friendship. Our synergistic development should encourage any company to work with Drudots, we highly recommend you do.”",
+        "“Working with Hybsol Technologies and the Hybsol team has been excellent since the very beginning. I started with a rough XD design of an app I wanted to create and we have now not only designed, developed and delivered that app in both app stores, it far exceeded expectations in quality and user experience. So much so, we are currently developing 3 more apps to continue our working relationship. Nothing is too much to ask, the Team is always on hand to help and we hugely value not only our working relationship with Hybsol, but also our friendship. Our synergistic development should encourage any company to work with Hybsol, we highly recommend you do.”",
     },
     {
      client:"HELDER ARAUJO",
       designation:"CEO at FLASHSTAR - A Fitter World", 
       content:
-        "“I have been working with Drudots Technologies for almost 2 years in the development of Flahstar. I'm very glad to have found Drudots Technologies and team, they are very professional and responsible. You just need to have one idea and they will design, develop and test the app until you will be happy with the results. I would choose to work with them always.”",
+        "“I have been working with Hybsol Technologies for almost 2 years in the development of Flahstar. I'm very glad to have found Hybsol Technologies and team, they are very professional and responsible. You just need to have one idea and they will design, develop and test the app until you will be happy with the results. I would choose to work with them always.”",
     },
     {
       client:"EMAD AHMED",
       designation:"CEO at HAYAT", 
       content:
-        "“One of the biggest problems we face today is timing and trust in a long-distance relationship with Company whilst keeping the level of Professionalism high to a standard which I found astonishing and successful throughout my experience with Drudots Technologies, I witnessed my Idea come to reality from UX designs to Development in an agile environment which basically meant that I was able to make changes and add on more features to the Android Development of Hayat, Drudots Company provided not only the work but also consultation throughout the last year. I have also learned a lot of things such as how the system works, in terms of Servers and Customers Data, Drudots have helped me to write up the terms and conditions for the application, accessibility features, policy, licensing, and much more. Thank you so much.”",
+        "“One of the biggest problems we face today is timing and trust in a long-distance relationship with Company whilst keeping the level of Professionalism high to a standard which I found astonishing and successful throughout my experience with Hybsol Technologies, I witnessed my Idea come to reality from UX designs to Development in an agile environment which basically meant that I was able to make changes and add on more features to the Android Development of Hayat, Hybsol Company provided not only the work but also consultation throughout the last year. I have also learned a lot of things such as how the system works, in terms of Servers and Customers Data, Hybsol have helped me to write up the terms and conditions for the application, accessibility features, policy, licensing, and much more. Thank you so much.”",
     },
    
   ];
+
+  const handleScroll = (event) => {
+    
+    setHomeCheck(true)
+  };
     
   return (
     <>
@@ -66,7 +71,7 @@ const Testimonials = () => {
     }
 
       {homeCheck === false && (
-        <div className="home-div" style={{ marginTop: "15%" }}>
+        <div className="home-div" onWheel={handleScroll} style={{ marginTop: "15%" }}>
          <CanvasAnimation />
           <Row>
             <Col xl={2}>
@@ -107,7 +112,7 @@ const Testimonials = () => {
             
 
 
-<Row className="justify-content-center mt-5" style={{ marginTop: "10%" }}>>
+<Row className="justify-content-center mt-5" style={{ marginTop: "10%" }}>
 <Col xl={12}>
 <h1 className="web-heading text-center">Client Testimonials</h1>
 <Container>

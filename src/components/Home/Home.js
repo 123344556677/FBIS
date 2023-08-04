@@ -15,10 +15,12 @@ import homeOne from './workflow.png'
 import ProfileModals from "components/Modals/ProfileModals";
 import Footer from "components/Footer/Footer";
 import Carousels from "components/Carousel/Carousel";
+import { useEffect } from "react";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [homeCheck, setHomeCheck] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
   
 
   const toggleLayout = () => {
@@ -57,7 +59,7 @@ const Home = () => {
       pic:"https://drudotstech.com/img/service3.svg",
       heading: "Web Developement",
       content:
-        "We build web applications that deliver remarkable functionality and user interface",
+        "We build web applications that deliver remarkable functionality and user interface, give me two mre lines of it.",
     },
     {
       class:"services-cards-color-Four",
@@ -81,6 +83,13 @@ const Home = () => {
         "If you need a quick, efficient and secure data migration service with no disruption to your business, our experts can help.",
     },
   ];
+
+  Aos.init()
+
+const handleScroll = (event) => {
+    
+    setHomeCheck(true)
+  };
     
   return (
     <>
@@ -89,7 +98,7 @@ const Home = () => {
     }
 
       {homeCheck === false && (
-        <div className="home-div" style={{ marginTop: "15%" }}>
+        <div onWheel={handleScroll} className="home-div" style={{ marginTop: "15%" }}>
          <CanvasAnimation />
           <Row>
             <Col xl={2}>
@@ -154,7 +163,7 @@ const Home = () => {
               <Row className="mt-5">
               <Col xl={6} className="mt-5">
               <p className="web-text">
-             The most significant thing about Drudots is
+             The most significant thing about Hybsol is
               that our customers will get solutions to all their problems at one place either it is back-end development
                or front end designing we deal in all the stuff  related to IOS.
               
@@ -293,7 +302,7 @@ const Home = () => {
 }
 </Row>
 <hr style={{ width: "auto" }} />
-<Row className="justify-content-center mt-5">
+<Row className="justify-content-center mt-5" >
 <Col xl={11}>
 <h1 className="web-heading text-center">OUR WORKFLOW</h1>
 <p className="text-center web-sub-heading">We always follow professional Workflow and provide you best service with resealable
@@ -304,7 +313,7 @@ const Home = () => {
 
 <Col xl={6}>
 
- <Accordion defaultActiveKey="0">
+ <Accordion defaultActiveKey="0"  >
       <Accordion.Item eventKey="0">
         <Accordion.Header className="accordion-header">Requirements Gathering </Accordion.Header>
         <Accordion.Body>
@@ -373,14 +382,18 @@ const Home = () => {
   
 
 </Col>
+
 <Col xl={5}>
 <img src={homeOne} className="ml-lg-5 mt-5" alt="" />
+</Col>
+
+</Row>
+
+</Container>
 
 </Col>
 </Row>
-</Container>
-</Col>
-</Row>
+
 <hr style={{ width: "auto" }} />
 <Row className="justify-content-center mt-5">
 <Col xl={12}>
@@ -392,7 +405,7 @@ const Home = () => {
 <Row className="mt-5">
  {serviceCards.map((data, index) => (
 <Col xl={4}>
-                    <Card className={`${data?.class} services-cards`}>
+                    <Card className={`${data?.class} services-cards`} style={{height:"330px"}}>
                       <CardHeader>
                         <h2 className=" mb-0 text-center">
                           <img src={data?.pic}alt="" className="service-card-img"/>
@@ -419,7 +432,7 @@ const Home = () => {
 <hr style={{ width: "auto" }} />
 <Row className="justify-content-center mt-5">
 <Col xl={12}>
-<h1 className="web-heading text-center">OUR Projects</h1>
+<h1 className="web-heading text-center">OUR PROJECTS</h1>
 <p className="text-center web-sub-heading">We provide best tested Projects.</p>
 
 <Container>

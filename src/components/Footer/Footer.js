@@ -109,7 +109,7 @@ export default function Footer() {
               <a className="footer-links"><span className="mr-2"><AiFillPhone/></span> +92-326-122-4033</a>
             </li>
             <li className="footer-list-items">
-               <a className="footer-links"><span className="mr-2"><AiFillMail/></span> contact@drudotstech.com</a>
+               <a className="footer-links"><span className="mr-2"><AiFillMail/></span> contact@hybsoltech.com</a>
             </li>
             <li className="footer-list-items">
                <a className="footer-links"><span className="mr-2"><CiLocationOn/></span> 441 - G4 M.A Johar Town, Lahore</a>

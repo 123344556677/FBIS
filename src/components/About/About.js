@@ -26,6 +26,7 @@ const About = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [homeCheck, setHomeCheck] = useState(false);
   const [moreCheck, setMoreCheck] = useState(true);
+  
  
   const toggleLayout = () => {
     setIsOpen(!isOpen);
@@ -145,6 +146,10 @@ const About = () => {
       once: true,     // Only animate elements once on scroll
     });
   }, []);
+  const handleScroll = (event) => {
+    
+    setHomeCheck(true)
+  };
   return (
     <>
     {
@@ -154,7 +159,7 @@ const About = () => {
       
        
          {homeCheck === false && (
-        <div className="home-div" style={{ marginTop: "15%" }}>
+        <div className="home-div" onWheel={handleScroll} style={{ marginTop: "15%" }}>
          <CanvasAnimation />
           <Row>
             <Col xl={2}>

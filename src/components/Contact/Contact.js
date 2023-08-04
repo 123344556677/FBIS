@@ -88,6 +88,10 @@ const Contact = () => {
         "If you need a quick, efficient and secure data migration service with no disruption to your business, our experts can help.",
     },
   ];
+  const handleScroll = (event) => {
+    
+    setHomeCheck(true)
+  };
 
   return (
     <>
@@ -96,7 +100,7 @@ const Contact = () => {
       }
 
       {homeCheck === false && (
-        <div className="home-div" style={{ marginTop: "15%" }}>
+        <div className="home-div" onWheel={handleScroll} style={{ marginTop: "15%" }}>
           <CanvasAnimation />
           <Row>
             <Col xl={2}>
