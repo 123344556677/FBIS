@@ -1,0 +1,24 @@
+.carousel-img{
+    height:400px;
+    width: 1200px;
+}
+.carousel-control-prev-icon::before {
+  color: rgb(43, 37, 37); 
+  font-size: 30px;
+  font-weight: 700;
+}
+.carousel-control-next-icon::before {
+  color: rgb(43, 37, 37);
+  font-size: 30px;
+  font-weight: 700;
+}
+.carousel-indicators li {
+  background-color: rgb(43, 37, 37); 
+}
+.carousel-indicators .active {
+   background-color: rgb(36, 52, 145);
+}
+.carousel-caption p {
+  color: rgb(43, 37, 37);
+  font-weight: 600;
+}

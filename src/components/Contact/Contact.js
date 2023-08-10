@@ -23,6 +23,7 @@ import { useNavigate } from "react-router-dom";
 import CanvasAnimation from "components/particles/CanvasAnimation";
 import ProfileModals from "components/Modals/ProfileModals";
 import Footer from "components/Footer/Footer";
+import contactOne from '../../assets/img/c1.jpg'
 
 const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -165,7 +166,7 @@ const Contact = () => {
                 initial="hidden"
                 animate="visible"
                 variants={slideVariantsOne}>
-                <img src="https://drudotstech.com/img/mailbox.svg" alt="" />
+                <img src={contactOne} alt="" />
                 </motion.div>
               </Col>
               

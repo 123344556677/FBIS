@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import portfolioOne from '../../assets/img/p1.png'
+import portfolioTwo from '../../assets/img/p4.png'
+import portfolioThree from '../../assets/img/p3.png'
+import './Carousel.css'
 import {
   Carousel,
   CarouselItem,
@@ -9,19 +13,19 @@ import {
 
 const items = [
   {
-    src: 'https://picsum.photos/id/123/1200/400',
+    src: portfolioOne,
     altText: 'Slide 1',
     caption: 'Poject 1',
     key: 1,
   },
   {
-    src: 'https://picsum.photos/id/456/1200/400',
+    src: portfolioTwo,
     altText: 'Slide 2',
     caption: 'Poject 2',
     key: 2,
   },
   {
-    src: 'https://picsum.photos/id/678/1200/400',
+    src: portfolioThree,
     altText: 'Slide 3',
     caption: 'Poject 3',
     key: 3,
@@ -56,10 +60,11 @@ function Carousels(args) {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} />
+        <img src={item.src} alt={item.altText} className='carousel-img' />
         <CarouselCaption
           captionText={item.caption}
           captionHeader={item.caption}
+          
         />
       </CarouselItem>
     );
@@ -82,6 +87,7 @@ function Carousels(args) {
         direction="prev"
         directionText="Previous"
         onClickHandler={previous}
+        
       />
       <CarouselControl
         direction="next"

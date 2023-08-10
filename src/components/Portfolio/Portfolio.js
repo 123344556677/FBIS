@@ -22,7 +22,27 @@ import { useNavigate } from "react-router-dom";
 import CanvasAnimation from "components/particles/CanvasAnimation";
 import ProfileModals from "components/Modals/ProfileModals";
 import Footer from "components/Footer/Footer";
-import serviceOne from "../../assets/img/dummyOne.jpg";
+import projectOne from "../../assets/img/pr.png";
+import projectTwo from "../../assets/img/pr2.png";
+import projectThree from "../../assets/img/pr3.png";
+import projectFour from "../../assets/img/pr4.png";
+import projectFive from "../../assets/img/pr5.png";
+import projectSix from "../../assets/img/pr6.png";
+import projectSeven from "../../assets/img/pr7.png";
+import projectEight from "../../assets/img/pri.png";
+import projectNine from "../../assets/img/pri2.png";
+import projectTen from "../../assets/img/pri3.png";
+import projectEleven from "../../assets/img/pri4.png";
+import projectTwelve from "../../assets/img/pri5.png";
+import projectThirteen from "../../assets/img/pro.png";
+import projectFourten from "../../assets/img/pro2.png";
+import projectFifteen from "../../assets/img/pro3.png";
+import projectSixteen from "../../assets/img/pro4.png";
+import projectSeventeen from "../../assets/img/pro5.png";
+import projectEighteen from "../../assets/img/pro6.png";
+
+
+
 
 const Projects = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,23 +66,73 @@ const Projects = () => {
   const history = useNavigate();
   const serviceCards = [
     {
-     pic:"	https://drudotstech.com/img/portfolio/p1.jpg"
+     pic:projectOne
     },
     {
-     pic:"	https://drudotstech.com/img/portfolio/p1.jpg"
+     pic:projectTwo
     },
     {
-     pic:"	https://drudotstech.com/img/portfolio/p1.jpg"
+     pic:projectThree
     },
     {
-     pic:"	https://drudotstech.com/img/portfolio/p1.jpg"
+     pic:projectFour
     },
     {
-     pic:"	https://drudotstech.com/img/portfolio/p1.jpg"
+     pic:projectFive
     },
     {
-     pic:"	https://drudotstech.com/img/portfolio/p1.jpg"
+     pic:projectSix
     },
+    
+    
+
+    
+  ];
+  const iosProjects = [
+    {
+     pic:projectSeven
+    },
+    {
+     pic:projectEight
+    },
+    {
+     pic:projectNine
+    },
+    {
+     pic:projectTen
+    },
+    {
+     pic:projectEleven
+    },
+    {
+     pic:projectTwelve
+    },
+    
+    
+
+    
+  ];
+  const andriodProjects = [
+    {
+     pic:projectThirteen
+    },
+    {
+     pic:projectFourten
+    },
+    {
+     pic:projectFifteen
+    },
+    {
+     pic:projectSixteen
+    },
+    {
+     pic:projectSeventeen
+    },
+    {
+     pic:projectEighteen
+    },
+    
+    
 
     
   ];
@@ -123,10 +193,10 @@ const Projects = () => {
             
             <Col xl={12}>
               <h1 className="web-heading text-center">Our Projects</h1>
-              <p className="text-center web-sub-heading">The company is working with an aim to create the most trusted name in IOS development, both locally and <br/> internationally and we are not far away from that landmark as Hybsol Technology is recognized internationally 
+              <p className="text-center web-sub-heading">The company is working with an aim to create the most trusted name in IOS and Andriod development, both locally and <br/> internationally and we are not far away from that landmark as Hybsol Technology is recognized internationally 
 <br/> by a list of companies.</p>
               <Container>
-                <Row className="mt-5 justify-content-center">
+                <Row className=" justify-content-center">
                   {serviceCards.map((data, index) => (
                     <Col xl={4} className="">
                       <motion.div
@@ -134,7 +204,61 @@ const Projects = () => {
                         animate="visible"
                         variants={slideVariantsOne}
                       >
-                        <img src={data?.pic} alt="#" className="mt-5"/>
+                        <img src={data?.pic} alt="#" className=" projects-img"/>
+                      </motion.div>
+                    </Col>
+                  ))}
+                </Row>
+              </Container>
+            </Col>
+          </Row>
+          <hr style={{width:"auto"}}/>
+           <Row
+            className="justify-content-center mt-5"
+            style={{ marginTop: "10%" }}
+          >
+            
+            <Col xl={12}>
+              <h1 className="web-heading text-center">IOS Applications</h1>
+              <p className="text-center web-sub-heading">The company is working with an aim to create the most trusted name in IOS development, both locally and <br/> internationally and we are not far away from that landmark as Hybsol Technology is recognized internationally 
+<br/> by a list of companies.</p>
+              <Container>
+                <Row className=" justify-content-center">
+                  {iosProjects.map((data, index) => (
+                    <Col xl={4} className="">
+                      <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        variants={slideVariantsOne}
+                      >
+                        <img src={data?.pic} alt="#" className="projects-img"/>
+                      </motion.div>
+                    </Col>
+                  ))}
+                </Row>
+              </Container>
+            </Col>
+          </Row>
+           <hr style={{width:"auto"}}/>
+           <Row
+            className="justify-content-center mt-5"
+            style={{ marginTop: "10%" }}
+          >
+            
+            <Col xl={12}>
+              <h1 className="web-heading text-center">Andriod Applications</h1>
+              <p className="text-center web-sub-heading">The company is working with an aim to create the most trusted name in andriod development, both locally and <br/> internationally and we are not far away from that landmark as Hybsol Technology is recognized internationally 
+<br/> by a list of companies.</p>
+              <Container>
+                <Row className=" justify-content-center">
+                  {andriodProjects.map((data, index) => (
+                    <Col xl={4} className="">
+                      <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        variants={slideVariantsOne}
+                      >
+                        <img src={data?.pic} alt="#" className=" projects-img"/>
                       </motion.div>
                     </Col>
                   ))}

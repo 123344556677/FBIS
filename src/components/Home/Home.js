@@ -15,6 +15,8 @@ import homeOne from './workflow.png'
 import ProfileModals from "components/Modals/ProfileModals";
 import Footer from "components/Footer/Footer";
 import Carousels from "components/Carousel/Carousel";
+import homeTwo from '../../assets/img/h1.jpg'
+import homeThree from '../../assets/img/h2.jpg'
 import { useEffect } from "react";
 
 const Home = () => {
@@ -148,7 +150,7 @@ const handleScroll = (event) => {
               <Container>
               <Row>
               <Col xl={6}>
-              <img src="https://drudotstech.com/img/undraw_social_networking_nqk4.png" alt=""/>
+              <img src={homeTwo} alt=""/>
               </Col>
               <Col xl={5}>
              <p className="web-text">
@@ -175,7 +177,7 @@ const handleScroll = (event) => {
               
               </Col>
               <Col xl={5} className="mt-5">
-              <img src="https://drudotstech.com/img/undraw_pair_programming_njlp.png" alt=""/>
+              <img src={homeThree} alt=""/>
               </Col>
               </Row>
               </Container>
