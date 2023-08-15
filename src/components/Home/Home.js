@@ -95,9 +95,9 @@ const handleScroll = (event) => {
     
   return (
     <>
-      {
-      // <IndexNavbar />
-    }
+      
+      <IndexNavbar scrollCheck={homeCheck} />
+    
 
       {homeCheck === false && (
         <div onWheel={handleScroll} className="home-div" style={{ marginTop: "15%" }}>

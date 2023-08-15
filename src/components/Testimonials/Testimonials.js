@@ -11,10 +11,12 @@ import Aos from "aos";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import CanvasAnimation from "components/particles/CanvasAnimation";
-
 import ProfileModals from "components/Modals/ProfileModals";
 import Footer from "components/Footer/Footer";
 import serviceOne from '../../assets/img/dummyOne.jpg'
+import TestimonialOne from '../../assets/img/sparklink.png'
+import TestimonialTwo from '../../assets/img/techvista.png'
+import TestimonialThree from '../../assets/img/pixelEdge.png'
 
 const Testimonials = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,22 +41,25 @@ const Testimonials = () => {
   const history=useNavigate()
  const serviceCards = [
     {
-      client:"MICHAEL DENNIGTON",
-      designation:"CEO at GOLFWOD - AFFILIATES - CADDY - YO4",
+      pic:TestimonialOne,
+      client:"SparkLink Innovations",
+      designation:"PAKISTAN",
       content:
-        "“Working with Hybsol Technologies and the Hybsol team has been excellent since the very beginning. I started with a rough XD design of an app I wanted to create and we have now not only designed, developed and delivered that app in both app stores, it far exceeded expectations in quality and user experience. So much so, we are currently developing 3 more apps to continue our working relationship. Nothing is too much to ask, the Team is always on hand to help and we hugely value not only our working relationship with Hybsol, but also our friendship. Our synergistic development should encourage any company to work with Hybsol, we highly recommend you do.”",
+        "“At SparkLink Innovations, we've had the privilege of partnering with Hybsol Technologies on several projects, and the experience has been truly remarkable. Their innovative solutions and unwavering commitment to excellence have had a transformative impact on our business. Hybsol Technologies doesn't just provide technology; they provide tailored solutions that align perfectly with our goals. Their team's deep expertise, professionalism, and dedication have not only solved complex challenges but have also elevated our projects to new heights. Working with Hybsol Technologies has been a game-changing collaboration that continues to shape the future of our technological endeavors.”",
     },
     {
-     client:"HELDER ARAUJO",
-      designation:"CEO at FLASHSTAR - A Fitter World", 
+      pic:TestimonialTwo,
+     client:"TechVista Solutions",
+      designation:"GERMANY", 
       content:
-        "“I have been working with Hybsol Technologies for almost 2 years in the development of Flahstar. I'm very glad to have found Hybsol Technologies and team, they are very professional and responsible. You just need to have one idea and they will design, develop and test the app until you will be happy with the results. I would choose to work with them always.”",
+        "“Collaborating with Hybsol Technologies has been a transformative experience for TechVista Solutions. Their ability to craft innovative solutions that align seamlessly with our objectives has propelled our projects to new heights. Hybsol's commitment to excellence and deep technical expertise have not only addressed our challenges but have also opened doors to new possibilities. With Hybsol Technologies as a partner, we've harnessed the power of technology to drive our success forward, and their contributions continue to shape our journey in remarkable ways.”",
     },
     {
-      client:"EMAD AHMED",
-      designation:"CEO at HAYAT", 
+      pic:TestimonialThree,
+      client:"Pixel Edege Technoloies",
+      designation:"PAKISTAN", 
       content:
-        "“One of the biggest problems we face today is timing and trust in a long-distance relationship with Company whilst keeping the level of Professionalism high to a standard which I found astonishing and successful throughout my experience with Hybsol Technologies, I witnessed my Idea come to reality from UX designs to Development in an agile environment which basically meant that I was able to make changes and add on more features to the Android Development of Hayat, Hybsol Company provided not only the work but also consultation throughout the last year. I have also learned a lot of things such as how the system works, in terms of Servers and Customers Data, Hybsol have helped me to write up the terms and conditions for the application, accessibility features, policy, licensing, and much more. Thank you so much.”",
+        "“Working closely with Hybsol Technologies on our photo editor app project has been an exceptional journey. Their technical prowess and creative insights have seamlessly blended with our vision, resulting in an app that exceeds our expectations. Hybsol's dedication to detail, user experience, and innovation has enriched every aspect of the app's functionality. Their collaborative approach and timely delivery have made the entire process not only efficient but also enjoyable. Hybsol Technologies has played a pivotal role in bringing our photo editor app to life, and their partnership continues to be invaluable as we strive for excellence in the tech realm.”",
     },
    
   ];
@@ -66,9 +71,7 @@ const Testimonials = () => {
     
   return (
     <>
-      {
-      // <IndexNavbar />
-    }
+      <IndexNavbar scrollCheck={homeCheck} />
 
       {homeCheck === false && (
         <div className="home-div" onWheel={handleScroll} style={{ marginTop: "15%" }}>
@@ -115,6 +118,8 @@ const Testimonials = () => {
 <Row className="justify-content-center mt-5" style={{ marginTop: "10%" }}>
 <Col xl={12}>
 <h1 className="web-heading text-center">Client Testimonials</h1>
+<p className="text-center web-sub-heading">According to our clients, Hybsol stands out as the best choice for innovative 
+solutions that exceed expectations.</p>
 <Container>
 <Row className="mt-5">
  {serviceCards.map((data, index) => (
@@ -126,7 +131,7 @@ const Testimonials = () => {
               >
               <Row className="no-gutters mb-5">
               <Col xl={4} style={{maxWidth:'31%'}}>
-              <img className="client-img" src={serviceOne} alt="#" style={{height:"350px"}}/>
+              <img className="client-img" src={data?.pic} alt="#" style={{height:"350px"}}/>
               </Col>
               <Col xl={8}>
               

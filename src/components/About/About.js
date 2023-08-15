@@ -2,7 +2,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Aos from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 import {
   Button,
   Card,
@@ -20,14 +20,13 @@ import ProfileModals from "components/Modals/ProfileModals";
 import Footer from "components/Footer/Footer";
 import { useNavigate } from "react-router-dom";
 import CanvasAnimation from "components/particles/CanvasAnimation";
-import serviceOne from '../../assets/img/dummyOne.jpg'
+import serviceOne from "../../assets/img/dummyOne.jpg";
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [homeCheck, setHomeCheck] = useState(false);
   const [moreCheck, setMoreCheck] = useState(true);
-  
- 
+
   const toggleLayout = () => {
     setIsOpen(!isOpen);
     setIsOpen(!isOpen);
@@ -35,7 +34,6 @@ const About = () => {
   const handleState = (val) => {
     setIsOpen(false);
   };
-  
 
   const edgeCards = [
     {
@@ -93,74 +91,79 @@ const About = () => {
   ];
   const serviceCards = [
     {
-      class:"services-cards-color-one",
-      pic:"https://drudotstech.com/img/service/service1.svg",
-      heading: "IOS App Development",
+      class: "services-cards-color-one",
+      pic: "https://drudotstech.com/img/service/service1.svg",
+      heading: "Muhammad Sajawal",
+      designation: "CEO",
       content:
-        "Mobile application development services enable you to realise your mobile app ideas into feature-rich user experiences.",
+        "The best error message is the one that never shows up because the programmer anticipated the possibility and coded accordingly.",
     },
     {
-      class:"services-cards-color-Two",
-      pic:"https://drudotstech.com/img/service/service2.svg",
-      heading: "Andriod App Development",
+      class: "services-cards-color-one",
+      pic: "https://drudotstech.com/img/service/service1.svg",
+      heading: "Abdullah Rashid",
+      designation: "Graphic Designer",
       content:
-        "We channel your ideas into custom android apps that are feature-rich with user-centric.",
+        "Programming is the art of telling another human what one wants the computer to do.",
     },
     {
-      class:"services-cards-color-Three",
-      pic:"	https://drudotstech.com/img/service/service3.svg",
-      heading: "Web Developement",
+      class: "services-cards-color-Two",
+      pic: "https://drudotstech.com/img/service/service2.svg",
+      heading: "Minahil Javed",
+      designation: "Graphic Designer and HR",
       content:
-        "We build web applications that deliver remarkable functionality and user interface",
+        "Human Resources: Where the bridge between people and progress is built, fostering an environment of growth, collaboration, and empowerment.",
     },
     {
-      class:"services-cards-color-Four",
-      pic:"https://drudotstech.com/img/service/service5.svg",
-      heading: "Mobile App Uploading",
+      class: "services-cards-color-Three",
+      pic: "	https://drudotstech.com/img/service/service3.svg",
+      heading: "Abdul Hannan",
+      designation: "Web Developer",
       content:
-        "Fast, Powerful & Most Secure Network Solutions for Smart startups & Businesses.",
+        "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
     },
     {
-      class:"services-cards-color-Five",
-      pic:"https://drudotstech.com/img/service4.svg",
-      heading: "Application Bug Fixes",
+      class: "services-cards-color-Four",
+      pic: "https://drudotstech.com/img/service/service5.svg",
+      heading: "Abdullah Sukhera",
+      designation: "Project Bidder",
       content:
-        "From priority bug-fixing, technical investigations and change requests, we’ll support and maintain your software.",
+        "I provide Fast, Powerful & Most Secure Network Solutions for Smart startups & Businesses.",
     },
-     {
-      class:"services-cards-color-Six",
-      pic:"	https://drudotstech.com/img/service/service6.svg",
-      heading: "UI/UX",
+    {
+      class: "services-cards-color-Five",
+      pic: "https://drudotstech.com/img/service4.svg",
+      heading: "Aqeela Kareem",
+      designation: "Graphic Designer",
       content:
-        "If you need a quick, efficient and secure data migration service with no disruption to your business, our experts can help.",
+        "Graphic design is the visual language that bridges creativity and communication, giving life to ideas through color, typography, and imagery.",
     },
   ];
-  const history=useNavigate()
+  const history = useNavigate();
   const slideVariantsOne = {
     hidden: { x: "-100%" },
     visible: { x: 0, transition: { duration: 0.8 } },
   };
- useEffect(() => {
+  useEffect(() => {
     Aos.init({
       duration: 1000, // Set the duration of animations
-      once: true,     // Only animate elements once on scroll
+      once: true, // Only animate elements once on scroll
     });
   }, []);
   const handleScroll = (event) => {
-    
-    setHomeCheck(true)
+    setHomeCheck(true);
   };
   return (
     <>
-    {
-      // <IndexNavbar />
-    }
+      <IndexNavbar scrollCheck={homeCheck} />
 
-      
-       
-         {homeCheck === false && (
-        <div className="home-div" onWheel={handleScroll} style={{ marginTop: "15%" }}>
-         <CanvasAnimation />
+      {homeCheck === false && (
+        <div
+          className="home-div"
+          onWheel={handleScroll}
+          style={{ marginTop: "15%" }}
+        >
+          <CanvasAnimation />
           <Row>
             <Col xl={2}>
               <CiMenuFries
@@ -170,14 +173,13 @@ const About = () => {
             </Col>
             <Col xl={8}>
               <h1 className="mb-2 home-main-heading ">About Us</h1>
-              
+
               <p className="home-text text-white">
-               Hybsoltech is a workplace where we have 
-               gathered the top-notch experts and developers of IOS,Andriod and Web. 
-               We have a 15 member team of tested and proven developers who are experts in these fields.
-                
+                Hybsoltech is a workplace where we have gathered the top-notch
+                experts and developers of IOS,Andriod and Web. We have a 15
+                member team of tested and proven developers who are experts in
+                these fields.
               </p>
-              
             </Col>
           </Row>
           <Row className="justify-content-center " style={{ marginTop: "12%" }}>
@@ -193,67 +195,64 @@ const About = () => {
       )}
       {homeCheck === true && (
         <div className="home-div main-div">
-          
-           
-              <CiMenuFries
-                onClick={toggleLayout}
-                className="ml-lg-5 slide-open-btn-second "
-              />
+          <CiMenuFries
+            onClick={toggleLayout}
+            className="ml-lg-5 slide-open-btn-second "
+          />
+
+          <Row
+            className="justify-content-center mt-5"
+            style={{ marginTop: "10%" }}
+          >
             
-            
+            <Col xl={12}>
+              <h1 className="web-heading text-center"> Meet Our Team</h1>
 
+              <p className="text-center web-sub-heading">
+                Meet the dedicated minds behind our success. Our team is a diverse blend of talents,<br/> each 
+                contributing their unique expertise to drive innovation.
+              </p>
 
-<Row className="justify-content-center mt-5" style={{ marginTop: "10%" }}>>
-<Col xl={12}>
-<h1 className="web-heading text-center"> Meet Our Team</h1>
+              <Container>
+                <Row className="mt-5">
+                  {serviceCards.map((data, index) => (
+                    <Col xl={4} className="text-center">
+                      <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        variants={slideVariantsOne}
+                      >
+                        <Card className="edge-cards ">
+                          <CardHeader>
+                            <img src={serviceOne} alt="" className="" />
 
+                            <h5 className="text-color  services-card-heading  mb-0">
+                              {data?.heading}
+                            </h5>
+                            <span className="team-designation">
+                              {data?.designation}
+                            </span>
+                          </CardHeader>
+                          <CardBody>
+                            <p className="text-color services-card-text">
+                              {data?.content}
+                            </p>
+                          </CardBody>
+                          <CardFooter></CardFooter>
+                        </Card>
+                      </motion.div>
+                    </Col>
+                  ))}
+                </Row>
+              </Container>
+            </Col>
+          </Row>
 
-<Container>
-<Row className="mt-5">
- {serviceCards.map((data, index) => (
-<Col xl={4} className="text-center">
-<motion.div
-                initial="hidden"
-                animate="visible"
-                variants={slideVariantsOne}
-              >
-                    <Card className="edge-cards " >
-                      <CardHeader>
-                        
-                          <img src={serviceOne}alt="" className=""/>
-                        
-                        <h5 className="text-color  services-card-heading  mb-0">Abdul Hannan</h5>
-                        <span className="team-designation">Web Developer</span>
-                      </CardHeader>
-                      <CardBody>
-                        <p className="text-color services-card-text">
-                          I believe novel problems are nothing but the prospect of learning something peculiar. I work with a high-caliber 
-                          team to beget prodigious value to substantial projects.
-                        </p>
-                      </CardBody>
-                      <CardFooter>
-                      </CardFooter>
-                      
-                    </Card>
-                    </motion.div>
-                  </Col>
- ))}
-
-
-</Row>
-</Container>
-</Col>
-</Row>
-
-<Footer />
+          <Footer />
         </div>
       )}
 
-
-
-
-        {
-
+      {
         // <Row className="logo-row  ">
         //   <Col xl={2} className="no gutters">
         //     <img
@@ -271,7 +270,6 @@ const About = () => {
         //     </p>
         //   </Col>
         // </Row>
-       
         // <Container className="" style={{ marginTop: "10%",position:"relative" }}>
         //   <h1 className="text-color  page-headings">About Us</h1>
         //   <p className="text-color page-text">
@@ -292,7 +290,6 @@ const About = () => {
         //     <div className="about-card"></div>
         //   </Row>
         // </Container>
-
         // <Row className="justify-content-center mt-5">
         //   <Col xl={10}>
         //     <Card className="about-big-card" data-aos="fade-up">
@@ -315,7 +312,6 @@ const About = () => {
         //     </Card>
         //   </Col>
         // </Row>
-       
         // <Container className=" ml-0 mr-0 about-mission-container mt-5" >
         //   <br />
         //   <Row className="mt-5 mr-0">
@@ -369,10 +365,8 @@ const About = () => {
         //   <br />
         //   <br />
         // </Container>
-       
         // <Container className="mt-5">
         //   <h1 className="text-center text-color mt-5 edge-text">Our Edge</h1>
-
         //   <Row className="mt-5">
         //     {edgeCards.map((data, index) => (
         //       <Col xl={6}>
@@ -390,11 +384,9 @@ const About = () => {
         //       </Col>
         //     ))}
         //   </Row>
-
         //   <h1 className="text-center text-color mt-5 edge-text">
         //     Management Team
         //   </h1>
-
         //   <Row className="mt-5" >
         //     {teamCards.map((data, index) =>
         //       moreCheck ? (
@@ -454,8 +446,8 @@ const About = () => {
         //     </Row>
         //   )}
         // </Container>
-          }
-        
+      }
+
       <SlideLayout value={isOpen} stateValue={handleState} />
     </>
   );

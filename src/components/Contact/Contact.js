@@ -11,6 +11,7 @@ import {
   CardHeader,
   Col,
   Container,
+  Form,
   Input,
   Row,
 } from "reactstrap";
@@ -21,17 +22,54 @@ import Aos from "aos";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import CanvasAnimation from "components/particles/CanvasAnimation";
+import { Firestore, addDoc, collection, getFirestore } from "firebase/firestore";
 import ProfileModals from "components/Modals/ProfileModals";
 import Footer from "components/Footer/Footer";
 import contactOne from '../../assets/img/c1.jpg'
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import Swal from "sweetalert2";
+import firebase from "firebase/app";
+import "firebase/firestore";
+
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA7ttrGwYsAZP2DDwFflgWBTg-4_D2jtJ8",
+  authDomain: "hybsol-6220a.firebaseapp.com",
+  projectId: "hybsol-6220a",
+  storageBucket: "hybsol-6220a.appspot.com",
+  messagingSenderId: "336104154275",
+  appId: "1:336104154275:web:21317345fdbb46d5d24b16",
+  measurementId: "G-7QZ3BXLL3D"
+};
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const db=getFirestore(app)
+const collectionref=collection(db,'hybsol-messages')    
 
 const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [homeCheck, setHomeCheck] = useState(false);
+  const [name, setName] = useState(false);
+  const [email, setEmail] = useState(false);
+  const [message, setMessage] = useState(false);
 
   const toggleLayout = () => {
     setIsOpen(!isOpen);
     setIsOpen(!isOpen);
+  };
+
+  const handleEmailClick = () => {
+    const recipient = "recipient@example.com";
+    const subject = "Hello from React!";
+    const body = "This is the body of the email.";
+
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
   };
   const handleState = (val) => {
     setIsOpen(false);
@@ -93,12 +131,43 @@ const Contact = () => {
     
     setHomeCheck(true)
   };
+  
+
+  const onSubmit=async(e)=>{
+    e.preventDefault();
+      const values={
+        name:name,
+        email:email,
+        message:message
+      }
+      console.log(values,"values=========>")
+      try {
+  addDoc(collectionref,values).then((docRef)=>{
+    console.log(values)
+      Swal.fire({
+      icon: "success",
+      text: "Message sent.",
+    });
+  
+  })
+}
+catch(err){
+  console.log(err)
+}
+}
+
+
+
+
+
+
+
+
+  
 
   return (
     <>
-      {
-        // <IndexNavbar />
-      }
+     <IndexNavbar scrollCheck={homeCheck} />
 
       {homeCheck === false && (
         <div className="home-div" onWheel={handleScroll} style={{ marginTop: "15%" }}>
@@ -113,15 +182,15 @@ const Contact = () => {
             <Col xl={8}>
               <h1 className="mb-3 home-main-heading ">Contact Us</h1>
 
-              <a className="home-text text-white">
+              <a className="home-text text-white" style={{cursor:"pointer"}} onClick={handleEmailClick}>
                 <span className="mr-2">
                   <img src="https://drudotstech.com/img/path.png" alt="" />
                 </span>
-                contact@hysoltech.com
+                info@hysoltech.com
               </a>
               <br />
               <br />
-              <a className="home-text text-white ">
+              <a className="home-text text-white" style={{cursor:"pointer"}}>
                 <span className="mr-2">
                   <img src="https://drudotstech.com/img/phone.png" alt="" />
                 </span>
@@ -129,7 +198,7 @@ const Contact = () => {
               </a>
               <br />
               <br />
-              <a className="home-text text-white">
+              <a className="home-text text-white" style={{cursor:"pointer"}}>
                 <span className="mr-2">
                   <img src="	https://drudotstech.com/img/address.png" alt="" />
                 </span>
@@ -180,12 +249,14 @@ const Contact = () => {
                 <h3 className="contact-form-heading text-color">
                   Send Your Message!
                 </h3>
+                <Form onSubmit={onSubmit}>
                 <Input
                   defaultValue=""
                   placeholder="Name"
                   type="text"
                   autoComplete="text"
                   className="form-inputs"
+                  onChange={(e)=>setName(e.target.value)}
                   required
                 />
                 <Input
@@ -194,6 +265,7 @@ const Contact = () => {
                   type="email"
                   autoComplete="email"
                   className="form-inputs mt-4"
+                  onChange={(e)=>setEmail(e.target.value)}
                   required
                 />
                 <Input
@@ -202,10 +274,12 @@ const Contact = () => {
                   type="textarea"
                   autoComplete="text"
                   className="form-inputs-area mt-4"
+                  onChange={(e)=>setMessage(e.target.value)}
                   required
                 />
                 <h1 className="text-right mt-4">
-                <Button>Send Email -></Button></h1>
+                <Button type="submit">Send Email -></Button></h1>
+                </Form>
             </motion.div>
               </Col>
               

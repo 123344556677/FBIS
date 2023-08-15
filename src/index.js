@@ -21,6 +21,7 @@ import Contact from "components/Contact/Contact";
 import Services from "components/Services/Services";
 import Testimonials from "components/Testimonials/Testimonials";
 import Projects from "components/Portfolio/Portfolio";
+import IndexNavbar from "components/Navbars/IndexNavbar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -28,8 +29,9 @@ root.render(
   <>
   
   <BrowserRouter>
- 
- 
+ {
+//  <IndexNavbar/>
+ }
     <Routes>
      
       

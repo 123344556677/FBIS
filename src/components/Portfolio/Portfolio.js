@@ -143,9 +143,7 @@ const Projects = () => {
 
   return (
     <>
-      {
-        // <IndexNavbar />
-      }
+      <IndexNavbar scrollCheck={homeCheck} />
 
       {homeCheck === false && (
         <div className="home-div" onWheel={handleScroll} style={{ marginTop: "15%" }}>

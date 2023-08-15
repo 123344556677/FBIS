@@ -86,9 +86,7 @@ const Services = () => {
     
   return (
     <>
-      {
-      // <IndexNavbar />
-    }
+      <IndexNavbar scrollCheck={homeCheck} />
 
       {homeCheck === false && (
         <div className="home-div" onWheel={handleScroll} style={{ marginTop: "15%" }}>
@@ -160,7 +158,9 @@ const Services = () => {
                         </p>
                       </CardBody>
                       <CardFooter>
-                      <Button className="mt-3">Load More -></Button>
+                      {
+                      // <Button className="mt-3">Load More -></Button>
+                      }
                         
                       </CardFooter>
                     </Card>

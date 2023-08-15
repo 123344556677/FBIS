@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import logo from '../../assets/img/logo.png'
 // reactstrap components
 import {
   Button,
@@ -16,39 +17,29 @@ import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import { AiFillMail, AiFillPhone } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
 
+
+
+
 export default function Footer() {
+
+  const handleEmailClick = () => {
+    const recipient = "recipient@example.com";
+    const subject = "Hello from React!";
+    const body = "This is the body of the email.";
+
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+  };
+
+  
   return (
     <footer className="main-footer ml-5 mr-5 mt-5">
       <Row>
-        <Col xl={3}>
-          <hr
-            style={{
-              backgroundColor: "#928585",
-              width: "auto",
-              height: "0.1px",
-            }}
-          />
-          <h4 className="footer-headings text-color">CONTACT US</h4>
-          <ul className="footer-list">
-            <li className="footer-list-items">
-              <a className="footer-links">Corporate Headquarters</a>
-            </li>
-            <li className="footer-list-items">
-              <a className="footer-links">16000 Ventura Blvd;</a>
-            </li>
-            <li className="footer-list-items">
-              <a className="footer-links">Suite 770</a>
-            </li>
-            <li className="footer-list-items">
-              <a className="footer-links">USA</a>
-            </li>
-            <li className="footer-list-items">
-              <a className="footer-links">+1 818 222 9195</a>
-            </li>
-            <li className="footer-list-items">
-              <a className="footer-links">info@hybsoltech.com</a>
-            </li>
-          </ul>
+        <Col xl={3} className="text-center">
+          <img src={logo} alt="hybsol" className="mt-5" style={{width:"150px",height:"150px"}}/> 
         </Col>
         <Col xl={3}>
           <hr
@@ -61,16 +52,16 @@ export default function Footer() {
           <h4 className="footer-headings text-color ">About Us</h4>
           <ul className="footer-list">
             <li className="footer-list-items">
-              <a className="footer-links">About</a>
+              <a className="footer-links" href="/about">About</a>
             </li>
             <li className="footer-list-items">
-              <a className="footer-links">Services</a>
+              <a className="footer-links" href="/services">Services</a>
             </li>
             <li className="footer-list-items">
-              <a className="footer-links">Portfolio</a>
+              <a className="footer-links" href="/projects">Projects</a>
             </li>
             <li className="footer-list-items">
-              <a className="footer-links">Contact Us</a>
+              <a className="footer-links" href="/contact">Contact Us</a>
             </li>
           </ul>
         </Col>
@@ -85,13 +76,13 @@ export default function Footer() {
           <h4 className="footer-headings text-color">Community</h4>
           <ul className="footer-list">
             <li className="footer-list-items">
-              <a className="footer-links">About Us</a>
+              <a className="footer-links" href="/about">About Us</a>
             </li>
             <li className="footer-list-items">
-              <a className="footer-links">Our Team</a>
+              <a className="footer-links" href="/about">Our Team</a>
             </li>
             <li className="footer-list-items">
-              <a className="footer-links">Testemonials</a>
+              <a className="footer-links" href="/testimonials">Testemonials</a>
             </li>
           </ul>
         </Col>
@@ -109,7 +100,7 @@ export default function Footer() {
               <a className="footer-links"><span className="mr-2"><AiFillPhone/></span> +92-326-122-4033</a>
             </li>
             <li className="footer-list-items">
-               <a className="footer-links"><span className="mr-2"><AiFillMail/></span> contact@hybsoltech.com</a>
+               <a className="footer-links" onClick={handleEmailClick}><span className="mr-2" ><AiFillMail/></span> info@hybsoltech.com</a>
             </li>
             <li className="footer-list-items">
                <a className="footer-links"><span className="mr-2"><CiLocationOn/></span> 441 - G4 M.A Johar Town, Lahore</a>
