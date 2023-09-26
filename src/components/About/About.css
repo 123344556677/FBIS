@@ -1,157 +1,177 @@
-.about-logo{
+.about-logo {
     width: 20%;
-    
+
 }
-.logo-row{
+
+.logo-row {
     margin-top: 3%;
     position: relative;
 }
-.breadcrums-text{
+
+.breadcrums-text {
     font-size: 14px;
     cursor: pointer;
 
 }
-.breadcrums-text:hover{
+
+.breadcrums-text:hover {
     font-size: 14px;
     cursor: pointer;
     color: #212121 !important;
 
 }
-.breadcrums-link{
-   color: #1c72b8;
+
+.breadcrums-link {
+    color: #1c72b8;
     text-decoration: underline;
     font-weight: 600;
 
 }
-.breadcrums-link:hover{
+
+.breadcrums-link:hover {
     color: #212121 !important;
     text-decoration: underline;
     font-weight: 600;
 
 }
-.text-color{
+
+.text-color {
     color: #212121 !important;
 }
-.page-headings{
+
+.page-headings {
     font-weight: 600;
     font-size: 60px;
 
 }
-.page-text{
-font-size: 20px;
+
+.page-text {
+    font-size: 20px;
 
 }
-.about-big-card{
-background-image: linear-gradient(to bottom right,#0f1012,#181b90);
-height:620px;
-border-radius: 15px;
+
+.about-big-card {
+    background-image: linear-gradient(to bottom right, #0f1012, #181b90);
+    height: 620px;
+    border-radius: 15px;
 }
-.about-big-card-layer{
-background-image: url("https://netsoltech.com/images/aboutMainBoxBg.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 620px;
+
+.about-big-card-layer {
+    background-image: url("https://netsoltech.com/images/aboutMainBoxBg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 620px;
 }
-.about-big-card-heading{
+
+.about-big-card-heading {
     font-size: 54px;
-    
-}
-.about-mission-container{
-background-image: linear-gradient(to bottom right,#0f1012,#181b90);
-max-width: 100%!important;
-height: auto;
-position: relative;
-
-
 
 }
-.about-circles{
-    width: 150px!important;
-    height: 150px!important;
-    padding: 30px 20px!important;
-    
-    border: 1px solid white!important;
+
+.about-mission-container {
+    background-image: linear-gradient(to bottom right, #0f1012, #181b90);
+    max-width: 100% !important;
+    height: auto;
+    position: relative;
+
+
+
+}
+
+.about-circles {
+    width: 150px !important;
+    height: 150px !important;
+    padding: 30px 20px !important;
+
+    border: 1px solid white !important;
     border-radius: 50%;
 }
-.edge-text{
-    font-size: 36px!important; 
-    font-weight: 600;  
+
+.edge-text {
+    font-size: 36px !important;
+    font-weight: 600;
 
 }
-.edge-cards{
+
+.edge-cards {
     background: #fff;
-    box-shadow: 0 0 6px rgba(0,0,0,.2);
-     padding: 2vw 7%;    
+    box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+    padding: 2vw 7%;
 
 }
-.edge-card-heading{
-     font-size: 26px!important; 
-     font-weight: 600;
+
+.edge-card-heading {
+    font-size: 26px !important;
+    font-weight: 600;
 
 }
-.edge-card-text{
-    font-size: 16px !important;   
-    line-height: 28px!important;
+
+.edge-card-text {
+    font-size: 16px !important;
+    line-height: 28px !important;
     color: #333 !important;
-     
+
 
 }
-.explore-about-btn{
+
+.explore-about-btn {
     border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  border: 2px solid #1c72b8;
-  color: #1c72b8;
-  background-color: transparent;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index:1000;
-  
-    
+    width: 70px;
+    height: 70px;
+    border: 2px solid #1c72b8;
+    color: #1c72b8;
+    background-color: transparent;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+
+
 
 }
-.explore-about-btn:hover{
-    border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  border: 2px solid white;
-  color: rgb(76, 46, 186);
-  background-color: white;
-  font-size: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.6s ease-in-out;
 
-  
-    
+.explore-about-btn:hover {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    color: rgb(76, 46, 186);
+    background-color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s ease-in-out;
+
+
+
 
 }
 
 @media (min-width: 1200px) {
-  .about-circle-one{
-    margin-left: 10%;
+    .about-circle-one {
+        margin-left: 10%;
 
-  }
-  .about-circle-two{
-    margin-left: 18%;
+    }
 
-  }
-  .about-logo{
-    width: 20%;
-    margin-left: 90%;
+    .about-circle-two {
+        margin-left: 18%;
 
-    
+    }
+
+    .about-logo {
+        width: 20%;
+        margin-left: 90%;
+
+
+    }
 }
-}
 
-.team-designation{
-    color: #8F8F8F!important;
+.team-designation {
+    color: #8F8F8F !important;
     font-size: 15px;
-    
-}
 
+}

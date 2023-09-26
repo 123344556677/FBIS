@@ -1,33 +1,43 @@
-.main-footer{
-    background: #fcfcfc;    
+.main-footer {
+    background: #211853;
 }
-.footer-headings{
+
+.footer-headings {
     font-size: 17px;
-    margin-left: 11%!important;
+    margin-left: 11% !important;
+    color: white !important;
+    font-weight: 700;
 }
-.footer-links{
-    color: #333;
+
+.footer-links {
     text-decoration: none;
     cursor: pointer;
-    
+    color: white;
+
 }
-.footer-links:hover{
+
+.footer-links:hover {
     color: #1c72b8;
     text-decoration: none;
     cursor: pointer;
-    transition: 0.6s ease-in-out;  
-    
+    transition: 0.6s ease-in-out;
+
 }
-.footer-list{
+
+.footer-list {
     text-decoration: none;
+    list-style: none;
 }
-.footer-list-items{
-   margin-top: 8px;
+
+.footer-list-items {
+    margin-top: 8px;
 }
-.about-footer-icons{
+
+.about-footer-icons {
     font-size: 20px;
 }
-.about-footer-twitter{
-    
+
+.about-footer-twitter {
+
     margin-left: 20%;
 }

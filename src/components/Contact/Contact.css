@@ -1,21 +1,29 @@
-.contact-form-heading{
+.contact-form-heading {
     font-size: 1.75rem;
     letter-spacing: 1px;
 
 }
-.form-inputs{
+
+.form-inputs {
     border: none;
-    background: #fcfcfc; 
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
+    background: #fcfcfc;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
     padding: 1.5rem;
-    color: black!important;
+    color: black !important;
 
 }
-.form-inputs-area{
+
+.form-inputs-area {
     border: none;
-    background: #fcfcfc; 
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
-    padding: 1.5rem!important;
-    color: black!important;
+    background: #fcfcfc;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+    padding: 1.5rem !important;
+    color: black !important;
+
+}
+
+.contact-img {
+    width: 70%;
+    height: 70%;
 
 }

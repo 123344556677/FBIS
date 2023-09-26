@@ -1,6 +1,9 @@
-.carousel-img{
-    height:400px;
-    width: 1200px;
+.carousel-img {
+  width: 1200px;
+  height: 400px; /* Let the height adjust based on the aspect ratio */
+  max-width: 100%; /* Ensure the image doesn't exceed its parent's width */
+  display: block; /* Remove any extra spacing caused by inline elements */
+  margin: 0 auto; /* Center the image horizontally */
 }
 .carousel-control-prev-icon::before {
   color: rgb(43, 37, 37); 

@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import $ from 'jquery';
+import React, { useEffect, useRef } from "react";
+import $ from "jquery";
 
 const CanvasAnimation = () => {
   const canvasRef = useRef(null);
@@ -7,7 +7,7 @@ const CanvasAnimation = () => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     let requestId;
     let a = false;
 
@@ -16,7 +16,7 @@ const CanvasAnimation = () => {
     }
 
     function h(i, t, o) {
-      return a ? 'rgba(255,255,255, 0.8)' : 'rgba(28,114,184, 0.8)';
+      return a ? "rgba(255,255,255, 0.8)" : "rgba(28,114,184, 0.8)";
     }
 
     function s(i, t, o, n) {
@@ -55,9 +55,9 @@ const CanvasAnimation = () => {
     });
 
     let d = {
-      nb: 500, // Adjust the number of dots
+      nb: 400, // Adjust the number of dots
       distance: 80, // Adjust the distance for interaction
-      d_radius:150, // Adjust the radius for interaction
+      d_radius: 150, // Adjust the radius for interaction
       array: [],
     };
 
@@ -147,11 +147,11 @@ const CanvasAnimation = () => {
     resizeCanvas();
     animate();
 
-    window.addEventListener('resize', resizeCanvas);
+    window.addEventListener("resize", resizeCanvas);
 
     return () => {
       cancelAnimationFrame(requestId);
-      window.removeEventListener('resize', resizeCanvas);
+      window.removeEventListener("resize", resizeCanvas);
     };
   }, []);
 
@@ -159,15 +159,11 @@ const CanvasAnimation = () => {
     <canvas
       ref={canvasRef}
       style={{
-        position: 'fixed',
+        position: "fixed",
         top: 0,
         left: 0,
-        width: '100%',
-        height: '100%',
-        
-        
-      
-        
+        width: "100%",
+        height: "100%",
       }}
     />
   );
