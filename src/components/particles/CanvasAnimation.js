@@ -16,7 +16,7 @@ const CanvasAnimation = () => {
     }
 
     function h(i, t, o) {
-      return a ? "rgba(255,255,255, 0.8)" : "rgba(28,114,184, 0.8)";
+      return a ? "rgba(255, 51, 51, 0.8)" : "rgba(255, 128, 128,0.8)";
     }
 
     function s(i, t, o, n) {
@@ -55,7 +55,7 @@ const CanvasAnimation = () => {
     });
 
     let d = {
-      nb: 400, // Adjust the number of dots
+      nb: 350, // Adjust the number of dots
       distance: 80, // Adjust the distance for interaction
       d_radius: 150, // Adjust the radius for interaction
       array: [],

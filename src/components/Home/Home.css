@@ -9,7 +9,7 @@
     position: fixed;
     cursor: pointer;
     font-size: 40px;
-    color: rgb(62, 40, 163);
+    color: rgb(123, 28, 28);
     transition: 0.6s ease-in-out;
 
 }
@@ -18,7 +18,7 @@
     position: fixed;
     cursor: pointer;
     font-size: 40px;
-    color: blue;
+    color: rgb(123, 28, 28);
     margin-top: 10%;
     z-index: 2000;
 }
@@ -27,7 +27,7 @@
     position: fixed;
     cursor: pointer;
     font-size: 40px;
-    color: rgb(62, 40, 163);
+    color: rgb(90, 8, 8);
     transition: 0.6s ease-in-out;
 
 }
@@ -39,7 +39,7 @@
 
 .home-main-heading {
     font-size: 50px;
-    color: #1c72b8;
+    color: #b72f2f;
     font-weight: 600;
 }
 
@@ -100,7 +100,7 @@
     width: 70px;
     height: 70px;
     border: 2px solid white;
-    color: rgb(76, 46, 186);
+    color: rgb(123, 28, 28);
     background-color: white;
     font-size: 13px;
     display: flex;
@@ -346,9 +346,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu-text {
-    color: #0f8bd2;
+    color: #d44f4f;
     font-family: EurostileExt;
-    ;
+    
 }
 
 .list-items {
@@ -390,6 +390,9 @@ body::-webkit-scrollbar-thumb {
     bottom: 20px;
     right: 50px;
     z-index: 5000;
-
-
 }
+
+body{
+    background-image: linear-gradient(to right, #390909, #1e0606);
+}
+

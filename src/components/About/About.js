@@ -62,8 +62,8 @@ const About = () => {
           
 
           <Row
-            className="justify-content-center mt-5"
-            style={{ marginTop: "10%" }}
+            className="justify-content-center"
+            style={{ marginTop: "1%" }}
           >
             <Col xl={12}>
               <h1 className="web-heading text-center"> Meet Our Team</h1>

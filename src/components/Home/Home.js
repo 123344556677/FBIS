@@ -75,12 +75,12 @@ const Home = () => {
         <ViewPage
           checkValue={setHomeCheckValue}
           text={homeText}
-          heading={"HYBSOL."}
+          heading={"Friends Business and IT Solutions."}
         />
       )}
       {homeCheck === true && (
         <div className="home-div main-div">
-          <Row style={{ marginTop: "10%" }}>
+          <Row style={{ marginTop: "1%" }}>
             <Col xl={1}>
               <CiMenuFries
                 onClick={toggleLayout}

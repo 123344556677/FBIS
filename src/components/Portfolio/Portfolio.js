@@ -131,7 +131,7 @@ const Projects = () => {
 
           <Row
             className="justify-content-center mt-5"
-            style={{ marginTop: "10%" }}
+            style={{ marginTop: "1%" }}
           >
             <Col xl={12}>
               <h1 className="web-heading text-center">Our Projects</h1>

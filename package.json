@@ -1,17 +1,10 @@
 {
-  "name": "blk-design-system-react",
+  "name": "fbis",
   "version": "1.2.2",
-  "description": "React version of BLK Design System by Creative Tim",
+  "description": "Freinds Business and IT solutions",
   "main": "index.js",
-  "author": "Creative Tim",
+  "author": "Abdul Hannan",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creativetimofficial/blk-design-system-react.git"
-  },
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/blk-design-system-react/issues"
-  },
   "homepage": "https://demos.creative-tim.com/#/",
   "keywords": [
     "react",

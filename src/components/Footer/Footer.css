@@ -1,5 +1,5 @@
 .main-footer {
-    background: #211853;
+    background-image: linear-gradient(to bottom right, #390909, #1e0606);
 }
 
 .footer-headings {
@@ -17,7 +17,7 @@
 }
 
 .footer-links:hover {
-    color: #1c72b8;
+    color: rgb(123, 28, 28);
     text-decoration: none;
     cursor: pointer;
     transition: 0.6s ease-in-out;

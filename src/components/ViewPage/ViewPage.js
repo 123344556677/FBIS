@@ -29,7 +29,7 @@ const ViewPage = ({ checkValue, text, heading }) => {
       <div
         className="home-div"
         onWheel={setHomeCheckValue}
-        style={{ marginTop: "5%" }}
+        style={{ marginTop: "1%" }}
       >
         <CanvasAnimation />
         <Row>
@@ -42,7 +42,7 @@ const ViewPage = ({ checkValue, text, heading }) => {
           </Col>
           <Col xl={8}>
             <h1 className="mb-2 home-main-heading ">{heading}</h1>
-            {heading === "HYBSOL." && (
+            {heading === "Friends Business and IT Solutions." && (
               <h2 className="mb-2  home-sub-heading text-white">
                 Crafting Excellence, Transforming Ideas into Reality
               </h2>
@@ -94,7 +94,7 @@ const ViewPage = ({ checkValue, text, heading }) => {
           <a
             className="explore-btn"
             alt="btn"
-            href="www.hybsoltech.com"
+            href="#"
             onClick={setHomeCheckValue}
           >
             Explore

@@ -24,7 +24,7 @@ const SlideLayout = ({ value, stateValue }) => {
   return (
     <Container fluid className={`slide-layout ${isOpen ? "open" : ""}`}>
       <AiOutlineClose className="slide-btn" onClick={toggleLayout} />
-      <div className="background-text">H Y B S OL</div>
+      <div className="background-text">F B I S</div>
       <div className="contact-button">
         <button
           onClick={() => history("/contact")}

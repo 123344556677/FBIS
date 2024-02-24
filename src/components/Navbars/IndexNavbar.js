@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../../assets/img/logo.png";
-import logoOne from "../../assets/img/logoOne.png";
+import logo from "../../assets/img/friendsLogo2.png";
+import logoOne from "../../assets/img/friendsLogo2.png";
 import "./Navbar.css";
 // reactstrap components
 import {Navbar,Container} from "reactstrap";

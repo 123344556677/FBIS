@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from '../../assets/img/logoOne.png'
+import logo from '../../assets/img/friendsLogo2.png'
 // reactstrap components
 import {
    Row,
@@ -22,7 +22,7 @@ export default function Footer() {
     <footer className="main-footer mt-5">
       <Row className="">
         <Col xl={3} className="text-center mb-4">
-          <img src={logo} alt="hybsol" className="mt-5" style={{width:"150px",height:"150px"}}/> 
+          <img src={logo} alt="hybsol" className="mt-2" style={{width:"200px",height:"200px"}}/> 
         </Col>
         <Col xl={3} className="mt-5 mb-4">
          
