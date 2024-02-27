@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../../assets/img/friendsLogo2.png";
-import logoOne from "../../assets/img/friendsLogo2.png";
+import logo from "../../assets/img/logo-grey.png";
+import logoOne from "../../assets/img/logo-white.png";
 import "./Navbar.css";
 // reactstrap components
 import {Navbar,Container} from "reactstrap";

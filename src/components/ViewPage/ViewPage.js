@@ -42,9 +42,9 @@ const ViewPage = ({ checkValue, text, heading }) => {
           </Col>
           <Col xl={8}>
             <h1 className="mb-2 home-main-heading ">{heading}</h1>
-            {heading === "Friends Business and IT Solutions." && (
+            {heading === "Friends IT Business Solutions." && (
               <h2 className="mb-2  home-sub-heading text-white">
-                Crafting Excellence, Transforming Ideas into Reality
+                Innovate, Collaborate, Excel
               </h2>
             )}
             {heading === "Contact Us" && (

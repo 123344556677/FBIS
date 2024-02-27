@@ -274,7 +274,7 @@
 }
 
 .active {
-    color: rgb(37, 118, 184);
+    color: rgb(230, 68, 68);
 }
 
 
@@ -363,11 +363,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .list-items:hover {
-    color: #1c72b8;
+    color: #b92f2f;
 }
 
 .list {
-    background-color: #211853;
+    background-color: #6e0e0e;
     margin: 0 auto 25px auto;
     list-style: none;
     text-align: center;

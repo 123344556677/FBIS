@@ -17,6 +17,7 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 import { servicesText } from "Mock_data/Data";
 import ViewPage from "components/ViewPage/ViewPage";
 import ScrollUp from "../ScrollUp";
+import { serviceCards } from "Mock_data/Data";
 
 const Services = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,50 +36,7 @@ const Services = () => {
     visible: { x: 0, transition: { duration: 0.8 } },
   };
 
-  const serviceCards = [
-    {
-      class: "services-cards-color-one",
-      pic: "https://drudotstech.com/img/service/service1.svg",
-      heading: "IOS App Development",
-      content:
-        "Mobile application development services enable you to realise your mobile app ideas into feature-rich user experiences.",
-    },
-    {
-      class: "services-cards-color-Two",
-      pic: "https://drudotstech.com/img/service/service2.svg",
-      heading: "Andriod App Development",
-      content:
-        "We channel your ideas into custom android apps that are feature-rich with user-centric.",
-    },
-    {
-      class: "services-cards-color-Three",
-      pic: "	https://drudotstech.com/img/service/service3.svg",
-      heading: "Web Developement",
-      content:
-        "We build web applications that deliver remarkable functionality and user interface",
-    },
-    {
-      class: "services-cards-color-Four",
-      pic: "https://drudotstech.com/img/service/service5.svg",
-      heading: "Mobile App Uploading",
-      content:
-        "Fast, Powerful & Most Secure Network Solutions for Smart startups & Businesses.",
-    },
-    {
-      class: "services-cards-color-Five",
-      pic: "https://drudotstech.com/img/service4.svg",
-      heading: "Application Bug Fixes",
-      content:
-        "From priority bug-fixing, technical investigations and change requests, we’ll support and maintain your software.",
-    },
-    {
-      class: "services-cards-color-Six",
-      pic: "	https://drudotstech.com/img/service/service6.svg",
-      heading: "UI/UX",
-      content:
-        "If you need a quick, efficient and secure data migration service with no disruption to your business, our experts can help.",
-    },
-  ];
+  
 
 
   const setHomeCheckValue = (val) => {
@@ -106,7 +64,7 @@ const Services = () => {
 
           <Row
             className="justify-content-center"
-            style={{ marginTop: "1%" }}
+            style={{ marginTop: "-5%" }}
           >
             
             <Col xl={12}>

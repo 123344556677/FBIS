@@ -75,7 +75,7 @@ const Home = () => {
         <ViewPage
           checkValue={setHomeCheckValue}
           text={homeText}
-          heading={"Friends Business and IT Solutions."}
+          heading={"Friends IT Business Solutions."}
         />
       )}
       {homeCheck === true && (
@@ -101,31 +101,30 @@ const Home = () => {
                     </Col>
                     <Col xl={5}>
                       <p className="web-text">
-                        Software development organization offering top-notch
-                        services to business of all kinds, startups as well as
-                        enterprises, to equip them with the latest technological
-                        requisites in the ever-evolving <br /> business
-                        landscape.
+                        At Friends IT Business Solutions, we prioritize quality in every aspect
+                         of our work. From initial planning to final deployment,
+                          our team follows stringent 
+                        standards and best practices to ensure excellence.
                       </p>
                       <p className="web-text mt-5">
-                        hybsoltech never compromises on the quality of work and
-                        with a team of tested professionals we are always on
-                        time and fulfill the requirements of our valuable
-                        clients. Apart from that our clients get a benefit of
-                        getting every IOS related work done at one place
+                        We conduct thorough testing and meticulous code reviews to guarantee reliability 
+                        and functionality. Our commitment to quality is 
+                        evident in the seamless user experiences and robust 
+                        functionalities we deliver.
                       </p>
                     </Col>
                   </Row>
                   <Row className="mt-5">
                     <Col xl={6} className="mt-5">
                       <p className="web-text">
-                        The most significant thing about Hybsol is that our
-                        customers will get solutions to all their problems at
-                        one place either it is back-end development or front end
-                        designing we deal in all the stuff related to IOS.
+                        Our success at Friends IT Business Solutions
+                         is fueled by our dedicated team of professionals. 
+                         With a shared passion for technology and a commitment
+                          to excellence, our team members bring diverse skills 
+                          and expertise to the table. 
                       </p>
                       <p className="web-text mt-5">
-                        In short, Hybsoltech will take care of your projects
+                        In short, we will take care of your projects
                         from scratch to highly professional, flawless and
                         dependable applications/websites. We deal with bulk
                         amount of international and local projects on a regular
