@@ -13,93 +13,61 @@ export const aboutCards = [
   {
     class: "services-cards-color-one",
     pic: "https://drudotstech.com/img/service/service1.svg",
-    heading: "Muhammad Sajawal",
+    heading: "Hassam Javed",
     designation: "CEO",
     content:
-      "The best error message is the one that never shows up because the programmer anticipated the possibility and coded accordingly.",
+      "Success is not just about making money. It's about making a difference.",
   },
   {
     class: "services-cards-color-one",
     pic: "https://drudotstech.com/img/service/service1.svg",
-    heading: "Abdullah Rashid",
-    designation: "Graphic Designer",
+    heading: "Abdullah Abid",
+    designation: "COO",
     content:
-      "Programming is the art of telling another human what one wants the computer to do.",
-  },
-  {
-    class: "services-cards-color-Two",
-    pic: "https://drudotstech.com/img/service/service2.svg",
-    heading: "Minahil Javed",
-    designation: "Graphic Designer and HR",
-    content:
-      "Human Resources: Where the bridge between people and progress is built, fostering an environment of growth, collaboration, and empowerment.",
-  },
-  {
-    class: "services-cards-color-Three",
-    pic: "	https://drudotstech.com/img/service/service3.svg",
-    heading: "Abdul Hannan",
-    designation: "Web Developer",
-    content:
-      "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
-  },
-  {
-    class: "services-cards-color-Four",
-    pic: "https://drudotstech.com/img/service/service5.svg",
-    heading: "Abdullah Sukhera",
-    designation: "Project Bidder",
-    content:
-      "I provide Fast, Powerful & Most Secure Network Solutions for Smart startups & Businesses.",
-  },
-  {
-    class: "services-cards-color-Five",
-    pic: "https://drudotstech.com/img/service4.svg",
-    heading: "Aqeela Kareem",
-    designation: "Graphic Designer",
-    content:
-      "Graphic design is the visual language that bridges creativity and communication, giving life to ideas through color, typography, and imagery.",
+      "The greatest leader is not necessarily the one who does the greatest things. He is the one that gets the people to do the greatest things",
   },
 ];
 export const serviceCards = [
   {
     class: "services-cards-color-one",
-    pic: "https://drudotstech.com/img/service/service1.svg",
-    heading: "Oracle Database Upgradation",
+    pic: require('../assets/img/android.png'),
+    heading: "Andriod App Development",
     content:
-      "Mobile application development services enable you to realise your mobile app ideas into feature-rich user experiences.",
+      "Android app development involves creating software applications specifically for devices running the Android operating system.",
   },
   {
     class: "services-cards-color-Two",
-    pic: "https://drudotstech.com/img/service/service2.svg",
-    heading: "Andriod App Development",
+    pic: require('../assets/img/database.png'),
+    heading: "Database Administration",
     content:
-      "We channel your ideas into custom android apps that are feature-rich with user-centric.",
+      "Database administration is the practice of managing and maintaining databases to ensure they operate efficiently, securely, and reliably.",
   },
   {
     class: "services-cards-color-Three",
-    pic: "	https://drudotstech.com/img/service/service3.svg",
+    pic: require('../assets/img/web-dev.png'),
     heading: "Web Developement",
     content:
       "We build web applications that deliver remarkable functionality and user interface",
   },
   {
     class: "services-cards-color-Four",
-    pic: "https://drudotstech.com/img/service/service5.svg",
+    pic: require('../assets/img/app-uploading.png'),
     heading: "Mobile App Uploading",
     content:
       "Fast, Powerful & Most Secure Network Solutions for Smart startups & Businesses.",
   },
   {
     class: "services-cards-color-Five",
-    pic: "https://drudotstech.com/img/service4.svg",
+    pic: require('../assets/img/mbl-app.png'),
     heading: "Application Bug Fixes",
     content:
       "From priority bug-fixing, technical investigations and change requests, we’ll support and maintain your software.",
   },
   {
     class: "services-cards-color-Six",
-    pic: "	https://drudotstech.com/img/service/service6.svg",
-    heading: "Oracle DBE",
+    pic: require('../assets/img/oracleebs.png'),
+    heading: "Oracle EBS Upgration",
     content:
-      "If you need a quick, efficient and secure data migration service with no disruption to your business, our experts can help.",
+      "Oracle E-Business Suite (EBS) upgrade is the process of transitioning an existing EBS installation to a newer version released by Oracle Corporation.",
   },
 ];

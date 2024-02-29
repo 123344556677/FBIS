@@ -143,5 +143,5 @@
 .slide-layout .contact-us-button:hover {
   background-color: white;
   transition: 0.6s ease-in-out;
-  color: blue;
+  color: rgb(123, 28, 28);
 }

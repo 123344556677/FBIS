@@ -13,7 +13,6 @@ import {
 import { CiMenuFries } from "react-icons/ci";
 import { motion } from "framer-motion";
 import Footer from "components/Footer/Footer";
-import { AiOutlineArrowUp } from "react-icons/ai";
 import { servicesText } from "Mock_data/Data";
 import ViewPage from "components/ViewPage/ViewPage";
 import ScrollUp from "../ScrollUp";
@@ -70,10 +69,8 @@ const Services = () => {
             <Col xl={12}>
               <h1 className="web-heading text-center"> SERVICES</h1>
               <p className="text-center web-sub-heading">
-                The company is working with an aim to create the most trusted
-                name in IOS development, both locally and <br /> internationally
-                and we are not far away from that landmark as Hybsol Technology
-                is recognized internationally
+                The company is working with an aim to create the most trusted  
+                name in IT solutions, both locally and <br /> internationally and we are not far away from that landmark as Friends IT Business Solutions is recognized internationally
                 <br /> by a list of companies.
               </p>
 
@@ -91,12 +88,7 @@ const Services = () => {
                             <img
                               src={data?.pic}
                               alt=""
-                              className={
-                                data?.pic ===
-                                "https://drudotstech.com/img/service4.svg"
-                                  ? "service-card-img-app"
-                                  : "service-card-img"
-                              }
+                              className="service-card-img"
                             />
 
                             <h5 className=" text-color services-card-heading mt-1">

@@ -78,13 +78,13 @@ const Testimonials = () => {
           <ScrollUp/>
           
           <Row
-            className="justify-content-center mt-5"
-            style={{ marginTop: "10%" }}
+            className="justify-content-center"
+            style={{ marginTop: "-3%" }}
           >
             <Col xl={12}>
               <h1 className="web-heading text-center">Client Testimonials</h1>
               <p className="text-center web-sub-heading">
-                According to our clients, Hybsol stands out as the best choice
+                According to our clients, FIBS out as the best choice
                 for innovative solutions that exceed expectations.
               </p>
               <Container>

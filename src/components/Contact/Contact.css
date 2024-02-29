@@ -19,6 +19,7 @@
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
     padding: 1.5rem !important;
     color: black !important;
+    border-bottom: 1px solid #8a2c2c!important;
 
 }
 
@@ -26,4 +27,9 @@
     width: 70%;
     height: 70%;
 
+}
+
+.msg-button{
+    background-image: linear-gradient(to bottom right, #8a2c2c, #7e2626);
+     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
 }

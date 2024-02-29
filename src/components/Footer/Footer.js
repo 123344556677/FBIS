@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from '../../assets/img/logo-grey.png'
+import logo from '../../assets/img/logo-white.png'
 // reactstrap components
 import {
    Row,

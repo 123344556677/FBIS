@@ -130,16 +130,16 @@ const Projects = () => {
           <ScrollUp/>
 
           <Row
-            className="justify-content-center mt-5"
-            style={{ marginTop: "1%" }}
+            className="justify-content-center"
+            style={{ marginTop: "-3%" }}
           >
             <Col xl={12}>
               <h1 className="web-heading text-center">Our Projects</h1>
               <p className="text-center web-sub-heading">
                 The company is working with an aim to create the most trusted
-                name in IOS and Andriod development, both locally and <br />{" "}
+                name in IT solutions, both locally and <br />{" "}
                 internationally and we are not far away from that landmark as
-                Hybsol Technology is recognized internationally
+                FIBS is recognized internationally
                 <br /> by a list of companies.
               </p>
               <Container>

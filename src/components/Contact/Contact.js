@@ -7,7 +7,7 @@ import { CiMenuFries } from "react-icons/ci";
 import { motion } from "framer-motion";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import Footer from "components/Footer/Footer";
-import contactOne from "../../assets/img/c3.jpg";
+import contactOne from "../../assets/img/c3.png";
 import { initializeApp } from "firebase/app";
 import Swal from "sweetalert2";
 import "firebase/firestore";
@@ -85,7 +85,7 @@ const Contact = () => {
 
           <Container className="">
             <Row
-              style={{ marginTop: "15%", marginBottom: "10%" }}
+              style={{ marginTop: "1%", marginBottom: "10%" }}
               className="justify-content-center"
             >
               <Col xl={6} className="text-center">
@@ -136,7 +136,7 @@ const Contact = () => {
                       required
                     />
                     <h1 className="text-right mt-4">
-                      <Button type="submit">Send Email -></Button>
+                      <Button type="submit" className="msg-button">Send Email -></Button>
                     </h1>
                   </Form>
                 </motion.div>
