@@ -1,4 +1,57 @@
-.logo{
+.logoOne{
+    width:200px;
+    height:90px;
+}
+.logoTwo{
     width:200px;
     height:200px;
 }
+.nav-link{
+ font-size: 18px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+.nav-link:hover {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  transition: 0.6s ease-in-out;
+  font-weight: 700;
+
+}
+.navbar .navbar-nav .nav-item .nav-link.active  {
+  color: rgb(171, 88, 88)!important;
+  font-size: 22px;
+}
+.nav-icon {
+  position: absolute;
+  right: 2%;
+  z-index: 500;
+  font-size: 30px;
+  color: white!important;
+  cursor: pointer;
+}
+
+.nav-icon-one {
+  position: absolute;
+  right: 2%;
+  z-index: 500;
+  font-size: 30px;
+  color: black!important;
+  cursor: pointer;
+}
+.navbar-collapse{
+  background:rgb(123, 28, 28) ;
+}
+
+@media (min-width: 992px) {
+  .toggle-icon {
+    display: none;
+  }
+}
+
+
+
+
+
+

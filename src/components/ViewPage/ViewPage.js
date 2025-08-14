@@ -34,15 +34,17 @@ const ViewPage = ({ checkValue, text, heading }) => {
         <CanvasAnimation />
         <Row>
           <Col xl={2}>
-            <p className="ml-lg-5 menu-text">MENU</p>
-            <CiMenuFries
-              onClick={toggleLayout}
-              className="ml-lg-5 slide-open-btn "
-            />
+            {
+              // <p className="ml-lg-5 menu-text">MENU</p>
+              // <CiMenuFries
+              //   onClick={toggleLayout}
+              //   className="ml-lg-5 slide-open-btn "
+              // />
+            }
           </Col>
           <Col xl={8}>
             <h1 className="mb-2 home-main-heading ">{heading}</h1>
-            {heading === "Friends IT Business Solutions." && (
+            {heading === "ISD Solutions." && (
               <h2 className="mb-2  home-sub-heading text-white">
                 Innovate, Collaborate, Excel
               </h2>
@@ -58,7 +60,7 @@ const ViewPage = ({ checkValue, text, heading }) => {
                   <span className="mr-2">
                     <img src="https://drudotstech.com/img/path.png" alt="" />
                   </span>
-                  info@hysoltech.com
+                  infocontact.isd@gmail.com
                 </a>
                 <br />
                 <br />
@@ -70,7 +72,7 @@ const ViewPage = ({ checkValue, text, heading }) => {
                   <span className="mr-2">
                     <img src="https://drudotstech.com/img/phone.png" alt="" />
                   </span>
-                  +92 3224090041
+                  +92 300 807 8456
                 </a>
                 <br />
                 <br />
@@ -82,7 +84,7 @@ const ViewPage = ({ checkValue, text, heading }) => {
                   <span className="mr-2">
                     <img src="	https://drudotstech.com/img/address.png" alt="" />
                   </span>
-                  441 - G4 M.A Johar Town, Lahore
+                  1st Floor Potohar Plaza - Blue Area, Lahore
                 </a>
               </>
             )}

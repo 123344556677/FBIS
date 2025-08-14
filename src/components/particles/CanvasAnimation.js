@@ -55,9 +55,12 @@ const CanvasAnimation = () => {
     });
 
     let d = {
-      nb: 350, // Adjust the number of dots
-      distance: 80, // Adjust the distance for interaction
-      d_radius: 150, // Adjust the radius for interaction
+      // nb: 350, // Adjust the number of dots
+      // distance: 80, // Adjust the distance for interaction
+      // d_radius: 150, // Adjust the radius for interaction
+       nb: 200, // Adjust the number of dots
+      distance: 30, // Adjust the distance for interaction
+      d_radius: 180, // Adjust the radius for interaction
       array: [],
     };
 

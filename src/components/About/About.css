@@ -175,3 +175,16 @@
     font-size: 15px;
 
 }
+.vision-img{
+    width: 2300px!important;
+    height: 250px;
+}
+.coreValue-img{
+    width: 2500px!important;
+    height: 250px;
+}
+.line{
+    background-color: #c7a5a5;
+    width: auto;
+    height: 0.02em;
+}

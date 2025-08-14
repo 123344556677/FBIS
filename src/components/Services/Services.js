@@ -35,9 +35,6 @@ const Services = () => {
     visible: { x: 0, transition: { duration: 0.8 } },
   };
 
-  
-
-
   const setHomeCheckValue = (val) => {
     setHomeCheck(val);
   };
@@ -55,22 +52,21 @@ const Services = () => {
       )}
       {homeCheck === true && (
         <div className="home-div main-div">
-          <CiMenuFries
-            onClick={toggleLayout}
-            className="ml-lg-5 slide-open-btn-second "
-          />
-          <ScrollUp/>
+          {
+            // <CiMenuFries
+            //   onClick={toggleLayout}
+            //   className="ml-lg-5 slide-open-btn-second "
+            // />
+          }
+          <ScrollUp />
 
-          <Row
-            className="justify-content-center"
-            style={{ marginTop: "-5%" }}
-          >
-            
+          <Row className="justify-content-center" style={{ marginTop: "-5%" }}>
             <Col xl={12}>
               <h1 className="web-heading text-center"> SERVICES</h1>
               <p className="text-center web-sub-heading">
-                The company is working with an aim to create the most trusted  
-                name in IT solutions, both locally and <br /> internationally and we are not far away from that landmark as Friends IT Business Solutions is recognized internationally
+                The company is working with an aim to create the most trusted
+                name in IT solutions, both locally and <br /> internationally
+                and we are not far away from that landmark as ISD solutions is recognized internationally
                 <br /> by a list of companies.
               </p>
 

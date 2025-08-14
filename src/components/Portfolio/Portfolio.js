@@ -23,7 +23,6 @@ import projectFifteen from "../../assets/img/pro3.png";
 import projectSixteen from "../../assets/img/pro4.png";
 import projectSeventeen from "../../assets/img/pro5.png";
 import projectEighteen from "../../assets/img/pro6.png";
-import { AiOutlineArrowUp } from "react-icons/ai";
 import { projectText } from "Mock_data/Data";
 import ViewPage from "components/ViewPage/ViewPage";
 import ScrollUp from "../ScrollUp";
@@ -39,7 +38,7 @@ const Projects = () => {
   const handleState = (val) => {
     setIsOpen(false);
   };
- 
+
   const slideVariantsOne = {
     hidden: { x: "-100%" },
     visible: { x: 0, transition: { duration: 0.8 } },
@@ -123,23 +122,22 @@ const Projects = () => {
       )}
       {homeCheck === true && (
         <div className="home-div main-div">
-          <CiMenuFries
-            onClick={toggleLayout}
-            className="ml-lg-5 slide-open-btn-second "
-          />
-          <ScrollUp/>
+          {
+            // <CiMenuFries
+            //   onClick={toggleLayout}
+            //   className="ml-lg-5 slide-open-btn-second "
+            // />
+          }
+          <ScrollUp />
 
-          <Row
-            className="justify-content-center"
-            style={{ marginTop: "-3%" }}
-          >
+          <Row className="justify-content-center" style={{ marginTop: "-3%" }}>
             <Col xl={12}>
               <h1 className="web-heading text-center">Our Projects</h1>
               <p className="text-center web-sub-heading">
                 The company is working with an aim to create the most trusted
-                name in IT solutions, both locally and <br />{" "}
-                internationally and we are not far away from that landmark as
-                FIBS is recognized internationally
+                name in IT solutions, both locally and <br /> internationally
+                and we are not far away from that landmark as ISD Solutions is
+                recognized internationally
                 <br /> by a list of companies.
               </p>
               <Container>

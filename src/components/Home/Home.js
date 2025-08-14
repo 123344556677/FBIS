@@ -12,12 +12,13 @@ import Footer from "components/Footer/Footer";
 import Carousels from "components/Carousel/Carousel";
 import homeTwo from "../../assets/img/h1.jpg";
 import homeThree from "../../assets/img/h2.jpg";
-import homeFour from "../../assets/img/card1.png";
-import homeFive from "../../assets/img/card2.png";
-import homeSix from "../../assets/img/card3.png";
-import homeSeven from "../../assets/img/card4.png";
-import homeEight from "../../assets/img/card5.png";
+import homeFour from "../../assets/img/card3.png";
+import homeFive from "../../assets/img/card4.png";
+import homeSix from "../../assets/img/card5.png";
+import homeSeven from "../../assets/img/card2.png";
+import homeEight from "../../assets/img/card1.png";
 import homeNine from "../../assets/img/card6.png";
+import homeTen from "../../assets/img/card7.png";
 import ViewPage from "components/ViewPage/ViewPage";
 import { homeText } from "Mock_data/Data";
 import ScrollUp from "../ScrollUp";
@@ -38,6 +39,9 @@ const Home = () => {
   };
 
   const homeCards = [
+    {
+      pic: homeTen,
+    },
     {
       pic: homeFour,
     },
@@ -75,17 +79,19 @@ const Home = () => {
         <ViewPage
           checkValue={setHomeCheckValue}
           text={homeText}
-          heading={"Friends IT Business Solutions."}
+          heading={"ISD Solutions."}
         />
       )}
       {homeCheck === true && (
         <div className="home-div main-div">
-          <Row style={{ marginTop: "1%" }}>
+          <Row style={{ marginTop: "3%" }}>
             <Col xl={1}>
-              <CiMenuFries
-                onClick={toggleLayout}
-                className="ml-lg-5 slide-open-btn-second "
-              />
+            {
+              // <CiMenuFries
+              //   onClick={toggleLayout}
+              //   className="ml-lg-5 slide-open-btn-second "
+              // />
+            }
               <ScrollUp/>
             </Col>
             <Col xl={11}>
@@ -101,7 +107,7 @@ const Home = () => {
                     </Col>
                     <Col xl={5}>
                       <p className="web-text">
-                        At Friends IT Business Solutions, we prioritize quality in every aspect
+                        At ISD Solutions., we prioritize quality in every aspect
                          of our work. From initial planning to final deployment,
                           our team follows stringent 
                         standards and best practices to ensure excellence.
@@ -117,7 +123,7 @@ const Home = () => {
                   <Row className="mt-5">
                     <Col xl={6} className="mt-5">
                       <p className="web-text">
-                        Our success at Friends IT Business Solutions
+                        Our success at ISD Solutions.
                          is fueled by our dedicated team of professionals. 
                          With a shared passion for technology and a commitment
                           to excellence, our team members bring diverse skills 

@@ -76,16 +76,18 @@ const Contact = () => {
       )}
       {homeCheck === true && (
         <div className="home-div main-div">
-          <CiMenuFries
-            onClick={toggleLayout}
-            className="ml-lg-5 slide-open-btn-second "
-          />
-          
-          <ScrollUp/>
+          {
+            // <CiMenuFries
+            //   onClick={toggleLayout}
+            //   className="ml-lg-5 slide-open-btn-second "
+            // />
+          }
+
+          <ScrollUp />
 
           <Container className="">
             <Row
-              style={{ marginTop: "1%", marginBottom: "10%" }}
+              style={{ marginTop: "5%", marginBottom: "10%" }}
               className="justify-content-center"
             >
               <Col xl={6} className="text-center">
@@ -136,7 +138,9 @@ const Contact = () => {
                       required
                     />
                     <h1 className="text-right mt-4">
-                      <Button type="submit" className="msg-button">Send Email -></Button>
+                      <Button type="submit" className="msg-button">
+                        Send Email ->
+                      </Button>
                     </h1>
                   </Form>
                 </motion.div>

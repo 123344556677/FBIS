@@ -6,9 +6,10 @@ import "./Testimonials.css";
 import { CiMenuFries } from "react-icons/ci";
 import { motion } from "framer-motion";
 import Footer from "components/Footer/Footer";
-import TestimonialOne from "../../assets/img/sparklink.png";
-import TestimonialTwo from "../../assets/img/techvista.png";
-import TestimonialThree from "../../assets/img/pixelEdge.png";
+import TestimonialOne from "../../assets/img/amazon-agri-logo.jpg";
+import TestimonialTwo from "../../assets/img/enviro-logo.png";
+import TestimonialThree from "../../assets/img/vendor-logo.jpg";
+import TestimonialFour from "../../assets/img/holstein-logo.PNG";
 import { testimonialsText } from "Mock_data/Data";
 import ViewPage from "components/ViewPage/ViewPage";
 import ScrollUp from "../ScrollUp";
@@ -33,25 +34,33 @@ const Testimonials = () => {
   const serviceCards = [
     {
       pic: TestimonialOne,
-      client: "SparkLink Innovations",
-      designation: "USA",
+      client: "Amazon Agri",
+      designation: "German",
       content:
-        "“At SparkLink Innovations, we've had the privilege of partnering with Hybsol Technologies on several projects, and the experience has been truly remarkable. Their innovative solutions and unwavering commitment to excellence have had a transformative impact on our business. Hybsol Technologies doesn't just provide technology; they provide tailored solutions that align perfectly with our goals. Their team's deep expertise, professionalism, and dedication have not only solved complex challenges but have also elevated our projects to new heights. Working with Hybsol Technologies has been a game-changing collaboration that continues to shape the future of our technological endeavors.”",
+        "“At Amazon Agri, we've had the privilege of partnering with ISD Solutions on several projects, and the experience has been truly remarkable. Their innovative solutions and unwavering commitment to excellence have had a transformative impact on our business. ISD Solutions doesn't just provide technology; they provide tailored solutions that align perfectly with our goals. Their team's deep expertise, professionalism, and dedication have not only solved complex challenges but have also elevated our projects to new heights.”",
+    },
+    {
+      pic: TestimonialFour,
+      client: "Pakistan Holstein Pvt ltd",
+      designation: "Pakistan",
+      content:
+        "“Collaborating closely with ISD Solutions has been an outstanding journey. Their technical expertise and innovative perspectives have seamlessly merged with our vision, resulting in an app that surpasses our expectations. ISD Solution's commitment to precision, user experience, and creativity has enhanced every facet of the app's functionality. Their cooperative approach and punctual delivery have not only made the entire process efficient but also enjoyable.”",
     },
     {
       pic: TestimonialTwo,
-      client: "TechVista Solutions",
-      designation: "USA",
+      client: "Enviro",
+      designation: "Pakistan",
       content:
-        "“Collaborating with Hybsol Technologies has been a transformative experience for TechVista Solutions. Their ability to craft innovative solutions that align seamlessly with our objectives has propelled our projects to new heights. Hybsol's commitment to excellence and deep technical expertise have not only addressed our challenges but have also opened doors to new possibilities. With Hybsol Technologies as a partner, we've harnessed the power of technology to drive our success forward, and their contributions continue to shape our journey in remarkable ways.”",
+        "“Collaborating with ISD Solutions has been a transformative experience for Enviro. Their ability to craft innovative solutions that align seamlessly with our objectives has propelled our projects to new heights. ISD Solution's commitment to excellence and deep technical expertise have not only addressed our challenges but have also opened doors to new possibilities. With ISD Solutions as a partner, we've harnessed the power of technology to drive our success forward, and their contributions continue to shape our journey in remarkable ways.”",
     },
     {
       pic: TestimonialThree,
-      client: "Pixel Edege Technoloies",
-      designation: "USA",
+      client: "JW Vendor City",
+      designation: "Pakistan",
       content:
-        "“Working closely with Hybsol Technologies on our photo editor app project has been an exceptional journey. Their technical prowess and creative insights have seamlessly blended with our vision, resulting in an app that exceeds our expectations. Hybsol's dedication to detail, user experience, and innovation has enriched every aspect of the app's functionality. Their collaborative approach and timely delivery have made the entire process not only efficient but also enjoyable. Hybsol Technologies has played a pivotal role in bringing our photo editor app to life, and their partnership continues to be invaluable as we strive for excellence in the tech realm.”",
+        "“Working closely with ISD Solutions has been an exceptional journey. Their technical prowess and creative insights have seamlessly blended with our vision, resulting in an app that exceeds our expectations. ISD Solution's dedication to detail, user experience, and innovation has enriched every aspect of the app's functionality. Their collaborative approach and timely delivery have made the entire process not only efficient but also enjoyable and their partnership continues to be invaluable as we strive for excellence in the tech realm.”",
     },
+    
   ];
 
   const setHomeCheckValue = (val) => {
@@ -71,20 +80,19 @@ const Testimonials = () => {
       )}
       {homeCheck === true && (
         <div className="home-div main-div">
-          <CiMenuFries
-            onClick={toggleLayout}
-            className="ml-lg-5 slide-open-btn-second "
-          />
-          <ScrollUp/>
-          
-          <Row
-            className="justify-content-center"
-            style={{ marginTop: "-3%" }}
-          >
+          {
+            // <CiMenuFries
+            //   onClick={toggleLayout}
+            //   className="ml-lg-5 slide-open-btn-second "
+            // />
+          }
+          <ScrollUp />
+
+          <Row className="justify-content-center" style={{ marginTop: "-3%" }}>
             <Col xl={12}>
               <h1 className="web-heading text-center">Client Testimonials</h1>
               <p className="text-center web-sub-heading">
-                According to our clients, FIBS out as the best choice
+                According to our clients, ISD Solutions out as the best choice
                 for innovative solutions that exceed expectations.
               </p>
               <Container>
@@ -97,9 +105,9 @@ const Testimonials = () => {
                         variants={slideVariantsOne}
                       >
                         <Row className="no-gutters mb-5">
-                          <Col xl={4} style={{ maxWidth: "31%" }}>
+                          <Col xl={4}>
                             <img
-                              className="client-img"
+                              className=""
                               src={data?.pic}
                               alt="#"
                               style={{ height: "350px" }}
